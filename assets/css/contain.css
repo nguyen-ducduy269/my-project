@@ -1,0 +1,813 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contain {
+  width: 100%;
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  display: flex;
+  margin-top: 100px;
+}
+
+/* categories */
+.categories {
+  width: 20%;
+  background-color: white;
+  padding: 5px 5px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  padding: 10px 15px;
+  gap: 10px;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.item-cate {
+  display: flex;
+  padding-left: 10px;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.item-cate:hover {
+  color: red;
+  font-weight: 600;
+}
+
+.item-cate .img {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.item-cate .detail {
+  font-size: 14px;
+}
+
+/* advertisement */
+.advertisement {
+  width: 60%;
+  margin: 0px 20px;
+}
+
+.more {
+  margin-top: 10px;
+  display: flex;
+  height: 40px;
+  gap: 20px;
+  align-items: center;
+}
+
+.more a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.more a:hover {
+  color: red;
+}
+
+.big-one .owl-dots {
+  position: absolute;
+  left: 25%;
+  top: 81%;
+}
+
+.big-one .owl-nav button {
+  height: 100%;
+}
+
+.big-one .owl-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 34%;
+  height: 75px;
+}
+
+.big-one button {
+  width: 36px;
+  height: 36px;
+  background-color: #869791;
+}
+
+.big-one button span {
+  font-size: 50px;
+}
+
+.ranking-main {
+  display: flex;
+  width: 720px;
+  height: 205px;
+  background-image: url(../image/background.webp);
+  background-size: cover;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.ranking-main .head {
+  width: 223px;
+}
+
+.ranking-main .head .title {
+  margin: 4px 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 21px;
+}
+
+.ranking-main .head .description {
+  padding-left: 14px;
+  color: #fff;
+  font-size: 18px;
+}
+.ranking-main .slick-track {
+  width: 68%;
+  padding-top: 30px;
+}
+
+.slick-track .item {
+  width: 100%;
+  height: 145px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.slick-track .item .item-img {
+  width: 75px;
+  margin: 0 auto;
+  padding-top: 5px;
+  height: 100px;
+}
+
+.item-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-track .item a {
+  text-decoration: none;
+}
+
+.slick-track .item .discount-deal {
+  width: 60px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 25%;
+  transform: translate(-50%);
+}
+
+.slick-track .item .deal-price {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* account-main */
+.account-main {
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.account {
+  width: 100%;
+  height: 100px;
+  background-image: url(../image/account-background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.account img {
+  width: 70px;
+  height: 70px;
+}
+
+.account-main .text {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.register {
+  width: 98px;
+  height: 36px;
+  background-image: linear-gradient(94deg, #ff0a0a, #ff7539);
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  font-weight: 700;
+}
+
+.sign-in {
+  width: 98px;
+  height: 36px;
+  background-color: #f5f5f5;
+  color: #222;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.aftext {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.account-contact {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.account-contact a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.account-contact a img {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  background-color: #80808030;
+  border-radius: 20px;
+}
+
+.account-contact a h4 {
+  font-size: 12px;
+}
+
+.new-deal {
+  width: 90%;
+  margin: 0 auto;
+  background-image: url(../image/new-deal.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.new-deal h4 {
+  font-size: 14px;
+  color: white;
+  padding: 10px 10px;
+}
+
+.new-deal h3 {
+  width: 90%;
+  font-size: 18px;
+  color: white;
+  padding: 0 10px;
+  margin-bottom: 115px;
+}
+
+.new-deals {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.product {
+  width: 92px;
+  height: 92px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.product img {
+  width: 100%;
+  height: 100%;
+}
+
+.product .price {
+  position: absolute;
+  bottom: 3px;
+  background-color: red;
+  width: 70px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+.account-sign-up {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: #869791d1;
+  z-index: 11;
+  width: 100%;
+  display: none;
+}
+
+.sign-active {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-sign-up .sign-up {
+  width: 40%;
+  height: 80%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sign-up .sign-up-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.sign-up .sign-up-title h3 {
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid red;
+}
+.sign-up .sign-up-title button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+}
+
+.form-sign-up {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.form-sign-up input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-radius: 7px;
+  color: gray;
+}
+
+.form-sign-up a {
+  text-decoration: none;
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.form-sign-up .create-account {
+  height: 44px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 100, 14, 0.5),
+    rgba(255, 48, 0, 0.5)
+  );
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.continue h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.continue .icon {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.continue .icon img {
+  width: 44px;
+  height: 44px;
+}
+
+/* sign-in */
+.account-sign-in {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: #869791d1;
+  z-index: 11;
+  width: 100%;
+  display: none;
+}
+
+.sign-active {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-sign-in .sign-in {
+  width: 40%;
+  height: 60%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sign-in .sign-in-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.sign-in .sign-in-title h3 {
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid red;
+}
+.sign-in .sign-in-title button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+}
+
+.form-sign-in {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.form-sign-in input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-radius: 7px;
+  color: gray;
+}
+
+.form-sign-in a {
+  text-decoration: none;
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.form-sign-in .sign-in-button {
+  height: 44px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 100, 14, 0.5),
+    rgba(255, 48, 0, 0.5)
+  );
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.scoll-to-top {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  bottom: 10%;
+  right: 1%;
+  background-color: #80808042;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s ease-in-out;
+}
+
+.scoll-to-top a i {
+  color: black;
+  opacity: 0.2;
+}
+
+.scoll-to-top a i:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1350px) {
+  .container {
+    width: 1170px !important;
+  }
+  .ranking-main {
+    width: 700px;
+  }
+
+  .ranking-main .slick-track {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .container {
+    width: 970px !important;
+  }
+
+  .item-cate .detail {
+    font-size: 12px;
+  }
+
+  .ranking-main {
+    flex-direction: column;
+    width: 580px;
+    height: auto;
+  }
+
+  .ranking-main .slick-track {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .ranking-main .head {
+    width: 100%;
+  }
+  .new-deal {
+    width: 100%;
+  }
+
+  .account-sign-up .sign-up {
+    width: 50%;
+    height: 80%;
+  }
+
+  .account-sign-in .sign-in {
+    width: 50%;
+  }
+
+  .form-sign-up {
+    padding: 0 80px;
+  }
+
+  .form-sign-in {
+    padding: 0 80px;
+  }
+  .account-contact a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    width: 750px !important;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .account-main {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .new-deal {
+    width: 72%;
+  }
+
+  .new-deal h4 {
+    font-size: 16px;
+    color: white;
+    padding: 16px 10px;
+  }
+
+  .new-deal h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .advertisement {
+    width: 60%;
+    margin: 0px 0px;
+  }
+
+  .more {
+    display: none;
+  }
+
+  .adver {
+    display: flex;
+    gap: 20px;
+  }
+
+  .big-one .owl-nav {
+    display: none;
+  }
+
+  .big-one .owl-dots {
+    display: none;
+  }
+
+  .big-one a img {
+    width: 100%;
+    height: 224px;
+  }
+
+  .ranking-main {
+    margin-top: 0;
+    width: 280px;
+  }
+
+  .ranking-main .head .title {
+    font-size: 18px;
+    padding: 5px 15px;
+  }
+
+  .categories {
+    width: 100%;
+  }
+
+  .list-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .account-sign-up .sign-up {
+    width: 60%;
+    height: 90%;
+  }
+
+  .account-sign-in .sign-in {
+    width: 60%;
+  }
+
+  .form-sign-up {
+    padding: 0 60px;
+  }
+
+  .form-sign-in {
+    padding: 0 60px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100% !important;
+  }
+  .account-main {
+    display: block;
+  }
+  .account-main .text {
+    font-size: 24px;
+  }
+  .new-deal {
+    display: none;
+  }
+  .advertisement {
+    width: 100%;
+  }
+  .big-one a img {
+    height: auto;
+  }
+  .adver {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .ranking-main {
+    width: 100%;
+  }
+
+  .account-sign-up .sign-up {
+    width: 75%;
+    height: 80%;
+  }
+
+  .account-sign-in .sign-in {
+    width: 75%;
+  }
+
+  .form-sign-up {
+    padding: 0 60px;
+  }
+
+  .form-sign-in {
+    padding: 0 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100% !important;
+  }
+  .account-main {
+    display: block;
+  }
+  .account-main .text {
+    font-size: 24px;
+  }
+  .new-deal {
+    display: none;
+  }
+  .advertisement {
+    width: 100%;
+  }
+  .big-one a img {
+    height: auto;
+  }
+  .adver {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .ranking-main {
+    width: 100%;
+  }
+
+  .account-sign-up .sign-up {
+    width: 95%;
+  }
+
+  .account-sign-in .sign-in {
+    width: 95%;
+  }
+
+  .form-sign-up {
+    padding: 0 30px;
+  }
+
+  .form-sign-in {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .container {
+    width: 100% !important;
+  }
+  .list-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .container {
+    width: 100% !important;
+  }
+  .list-categories {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

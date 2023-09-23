@@ -1,5 +1,7 @@
 const shoppingItem = JSON.parse(localStorage.getItem("order"));
-console.log(shoppingItem);
+const item = shoppingItem.map((item) => {
+  return item;
+});
 
 const orderH1 = document.querySelector(".orders h1");
 orderH1.innerHTML = "Shopping Cart" + " " + "(" + shoppingItem.length + ")";
@@ -16,20 +18,21 @@ function renderProduct() {
     shoppingItem.map((item) => {
       const order = document.createElement("div");
       order.classList.add("order");
+      order.setAttribute("id", item[0].id);
 
       order.innerHTML += `
       ${
-        item.type == "ring" && item.after_price == null
+        item[0].type == "ring" && item[0].after_price == null
           ? `
         <label class="checkbox-inline">
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <img src=${item[0]} alt="" />
+        <img src=${item[0].image} alt="" />
         <div class="order-detail">
-            <p>${item[4]}</p>
+            <p>${item[0].discription}</p>
     
-            <div class="order-cost">VND ₫<span>${item[3]}</span></div>
+            <div class="order-cost">VND ₫<span>${item[0].price}</span></div>
             <div class="shipping">Free shipping</div>
     
             <div class="size-ring">
@@ -58,17 +61,17 @@ function renderProduct() {
       }
     
       ${
-        item.type != "ring" && item.after_price == null
+        item[0].type != "ring" && item[0].after_price == null
           ? `
           <label class="checkbox-inline">
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
-          <img src=${item[0]} alt="" />
+          <img src=${item[0].image} alt="" />
           <div class="order-detail">
-              <p>${item[4]}</p>
+              <p>${item[0].discription}</p>
       
-              <div class="order-cost">VND ₫<span>${item[3]}</span></div>
+              <div class="order-cost">VND ₫<span>${item[0].price}</span></div>
               <div class="shipping">Free shipping</div>
       
               <div class="to-summary">
@@ -88,17 +91,17 @@ function renderProduct() {
       }
     
       ${
-        item.after_price && item.price == null
+        item[0].after_price && item[0].price == null
           ? `
         <label class="checkbox-inline">
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <img src=${item[0]}p alt="" />
+        <img src=${item[0].image} alt="" />
         <div class="order-detail">
-            <p>${item[4]}</p>
+            <p>${item[0].discription}</p>
     
-            <div class="order-cost">VND ₫<span>${item[3]}</span></div>
+            <div class="order-cost">VND ₫<span>${item[0].price}</span></div>
             <div class="shipping">Free shipping</div>
     
             <div class="to-summary">
@@ -159,57 +162,91 @@ function changeQuantities() {
   const quantityValue = document.querySelectorAll(".quantity");
   const increaseBtn = document.querySelectorAll(".increase");
   const deleteBtn = document.querySelectorAll(".delete");
-  const shoppingItem = JSON.parse(localStorage.getItem("array"));
 
-  for (let i = 0; i < shoppingItem.length; i++) {
-    if (shoppingItem[i].price && shoppingItem[i].after_price == null) {
-      decreaseBtn[i].addEventListener("click", () => {
-        let quantities = Number(quantityValue[i].innerHTML);
-        if (quantities > 1) {
-          quantities -= 1;
-          quantityValue[i].innerHTML = quantities;
-        }
-      });
+  increaseBtn.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const parentBtn = this.parentElement;
+      const quantity = Number(parentBtn.querySelector(".quantity").innerHTML);
+      console.log("quantity", quantity);
+      quantity += 1;
+      parentBtn.querySelector(".quantity").innerHTML = quantity;
+    });
+  });
 
-      increaseBtn[i].addEventListener("click", () => {
-        let quantities = Number(quantityValue[i].innerHTML);
-        quantities += 1;
-        quantityValue[i].innerHTML = quantities;
-      });
+  decreaseBtn.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const parentBtn = this.parentElement;
+      const quantity = Number(parentBtn.querySelector(".quantity").innerHTML);
+      console.log("quantity", quantity);
+      quantity -= 1;
+      parentBtn.querySelector(".quantity").innerHTML = quantity;
+    });
+  });
 
-      deleteBtn[i].addEventListener("click", () => {
-        if (confirm("You definitely want to delete this product?")) {
-          const listItem = JSON.parse(localStorage.getItem("array"));
-          listItem.splice(i, 1);
-          localStorage.setItem("array", JSON.stringify(listItem));
-          window.location.reload();
-        }
-      });
-    } else if (shoppingItem[i].price == null && shoppingItem[i].after_price) {
-      decreaseBtn[i].addEventListener("click", () => {
-        let quantities = Number(quantityValue[i].innerHTML);
-        if (quantities > 1) {
-          quantities -= 1;
-          quantityValue[i].innerHTML = quantities;
-        }
-      });
-
-      increaseBtn[i].addEventListener("click", () => {
-        let quantities = Number(quantityValue[i].innerHTML);
-        quantities += 1;
-        quantityValue[i].innerHTML = quantities;
-      });
-
-      deleteBtn[i].addEventListener("click", () => {
-        if (confirm("There are currently no products?")) {
-          const listItem = JSON.parse(localStorage.getItem("array"));
-          listItem.splice(i, 1);
-          localStorage.setItem("array", JSON.stringify(listItem));
-          window.location.reload();
-        }
-      });
-    }
+  for (let i = 0; i < item.length; i++) {
+    deleteBtn.forEach((btn) =>
+      btn.addEventListener("click", function () {
+        btn.addEventListener("click", () => {
+          if (confirm("You definitely want to delete this product?")) {
+            const listItem = JSON.parse(localStorage.getItem("order"));
+            listItem.splice(i, 1);
+            localStorage.setItem("order", JSON.stringify(listItem));
+            window.location.reload();
+          }
+        });
+      })
+    );
   }
+
+  // for (let i = 0; i < item.length; i++) {
+  //   if (item[i].price && item[i].after_price == null) {
+  //     decreaseBtn[i + 1].addEventListener("click", () => {
+  //       let quantities = Number(quantityValue[i].innerHTML);
+  //       if (quantities > 1) {
+  //         quantities -= 1;
+  //         quantityValue[i].innerHTML = quantities;
+  //       }
+  //     });
+
+  //     increaseBtn[i + 1].addEventListener("click", () => {
+  //       let quantities = Number(quantityValue[i].innerHTML);
+  //       quantities += 1;
+  //       quantityValue[i].innerHTML = quantities;
+  //     });
+
+  //     deleteBtn[i + 1].addEventListener("click", () => {
+  //       if (confirm("You definitely want to delete this product?")) {
+  //         const listItem = JSON.parse(localStorage.getItem("array"));
+  //         listItem.splice(i, 1);
+  //         localStorage.setItem("array", JSON.stringify(listItem));
+  //         window.location.reload();
+  //       }
+  //     });
+  //   } else if (item[i].price == null && item[i].after_price) {
+  //     decreaseBtn[i + 1].addEventListener("click", () => {
+  //       let quantities = Number(quantityValue[i].innerHTML);
+  //       if (quantities > 1) {
+  //         quantities -= 1;
+  //         quantityValue[i].innerHTML = quantities;
+  //       }
+  //     });
+
+  //     increaseBtn[i + 1].addEventListener("click", () => {
+  //       let quantities = Number(quantityValue[i].innerHTML);
+  //       quantities += 1;
+  //       quantityValue[i].innerHTML = quantities;
+  //     });
+
+  //     deleteBtn[i + 1].addEventListener("click", () => {
+  //       if (confirm("There are currently no products?")) {
+  //         const listItem = JSON.parse(localStorage.getItem("array"));
+  //         listItem.splice(i, 1);
+  //         localStorage.setItem("array", JSON.stringify(listItem));
+  //         window.location.reload();
+  //       }
+  //     });
+  //   }
+  // }
 }
 
 function totalPrice() {

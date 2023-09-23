@@ -5,13 +5,13 @@ function renderDetailProduct() {
   allProduct.innerHTML = `
     <div class="detail">
         <div class="main-img">
-            <img src="${product[0]}" alt="" />
+            <img src="${product[0].image}" alt="" />
         </div>
 
         <div class="main-content">
-            <div class="product-discription"><b>${product[4]}</b></div>
-            <div class="more-infor">Vote ${product[2]}, ${product[1]}</div>
-            <div class="product-price"><b>Price: đ${product[3]}</b></div>
+            <div class="product-discription"><b>${product[0].discription}</b></div>
+            <div class="more-infor">Vote ${product[0].next_sold} star - ${product[0].first_sold}</div>
+            <div class="product-price"><b>Price: đ${product[0].price}</b></div>
 
             <div class="add-cart">
                 <div class="shipping">
@@ -24,7 +24,7 @@ function renderDetailProduct() {
                 </div>
 
                 <div class="shipping-price">
-                    <p>Shipping: <b>${product[3]}</b></p>
+                    <p>Shipping: <b>đ${product[0].price}</b></p>
 
                     <p>Estimated delivery on Sep</p>
                 </div>
@@ -44,7 +44,7 @@ function addToCart() {
   const orderItem = JSON.parse(localStorage.getItem("order"));
 
   addToCartBtn.addEventListener("click", () => {
-    alert("Bạn đã thêm vào giỏ hàng thành công!");
+    alert("Success to add to cart!");
     orderItem.push(product);
 
     localStorage.setItem("order", JSON.stringify(orderItem));

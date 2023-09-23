@@ -200,6 +200,7 @@ function placeOrder() {
     } else if (checked == true && check == true) {
       localStorage.removeItem("items");
       const customProd = document.querySelector(".custom-products");
+      alert("Successfully paid");
       customProd.innerHTML = `
       <p style="text-align: center">
         You have successfully paid, please return to the

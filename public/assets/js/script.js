@@ -70,6 +70,7 @@ function renderProducts() {
     const contentItem = document.createElement("div");
     const aDiv = document.createElement("a");
     aDiv.setAttribute("href", "detail-product.html");
+    aDiv.setAttribute("id", item.id);
     contentItem.classList.add("content-item");
 
     if (item.sale_off == null && item.choice == null) {
@@ -205,31 +206,7 @@ function cart() {
   const numberOrder = document.querySelector(".header .number");
   numberOrder.innerHTML = order.length;
 }
-
 cart();
-
-// function addProducts() {
-//   const array = JSON.parse(localStorage.getItem("array"));
-//   const numberItem = document.querySelector("header .number");
-//   numberItem.innerHTML = array.length;
-
-//   const btns = document.querySelectorAll(".add-to-cart");
-//   const btn = Array.prototype.slice.call(btns);
-//   let newArray = [...array];
-//   btn.forEach((b) =>
-//     b.addEventListener("click", () => {
-//       const idProduct = b.getAttribute("id");
-//       const productFind = products.find((el) => el.id === +idProduct);
-
-//       newArray.push(productFind);
-//       localStorage.setItem("array", JSON.stringify(newArray));
-
-//       const numberItem = document.querySelector("header .number");
-//       numberItem.innerHTML = newArray.length;
-//     })
-//   );
-// }
-// addProducts();
 
 $("a[href='#top']").click(function () {
   $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -579,58 +556,20 @@ function filterProduct() {
       `;
       content.appendChild(contentItem);
     });
-
-    const btns = document.querySelectorAll(".add-to-cart");
-    const btn = Array.prototype.slice.call(btns);
-    array = JSON.parse(localStorage.getItem("array"));
-    btn.forEach((b) =>
-      b.addEventListener("click", () => {
-        console.log("aaaaa");
-        const idProduct = b.getAttribute("id");
-        const productFind = products.find((el) => el.id === +idProduct);
-
-        array.push(productFind);
-        localStorage.setItem("array", JSON.stringify(array));
-
-        const numberItem = document.querySelector("header .number");
-        numberItem.innerHTML = array.length;
-      })
-    );
   });
-
-  // const btns = document.querySelectorAll(".add-to-cart");
-  // const btn = Array.prototype.slice.call(btns);
-  // let array = [];
-  // btn.forEach((b) =>
-  //   b.addEventListener("click", () => {
-  //     console.log("aaaaa");
-  //     const idProduct = b.getAttribute("id");
-  //     const productFind = products.find((el) => el.id === +idProduct);
-
-  //     array.push(productFind);
-  //     localStorage.setItem("array", JSON.stringify(array));
-
-  //     const numberItem = document.querySelector("header .number");
-  //     numberItem.innerHTML = array.length;
-  //   })
-  // );
 }
 filterProduct();
 
 const product = [];
 const detailProducts = () => {
-  const contentItem = document.querySelectorAll(".content-item");
+  const contentID = document.querySelectorAll(".content a");
 
-  contentItem.forEach((item) => {
+  contentID.forEach((item) => {
     item.addEventListener("click", () => {
-      const imageItem = item.querySelector("img");
-      const imageSrc = imageItem.getAttribute("src");
-
-      const itemPrice = item.querySelector(".item-price p").innerHTML;
-      const soldNumber = item.querySelector(".sold span").innerHTML;
-      const vote = item.querySelector(".next-sold").innerHTML;
-      const discription = item.querySelector(".discription").innerHTML;
-      product.push(imageSrc, soldNumber, vote, itemPrice, discription);
+      const contentIDNumber = item.getAttribute("id");
+      const myOrder = goods.products;
+      const order = myOrder.find((item) => item.id === Number(contentIDNumber));
+      product.push(order);
       localStorage.setItem("product", JSON.stringify(product));
     });
   });

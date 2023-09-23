@@ -78,3 +78,144 @@
   color: white;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 1350px) {
+  .container {
+    width: 1170px !important;
+  }
+  .main-img {
+    width: 35%;
+  }
+  .main-content {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .container {
+    width: 970px !important;
+  }
+  .main-img {
+    width: 30%;
+    height: 355px;
+  }
+  .main-content {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    width: 750px !important;
+  }
+
+  .main-img {
+    width: 40%;
+    height: 355px;
+  }
+  .main-content {
+    width: 60%;
+  }
+  .add-cart {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .container {
+    width: 100% !important;
+  }
+  .main-img {
+    width: 40%;
+    height: 250px;
+  }
+  .main-content {
+    width: 60%;
+    gap: 10px;
+  }
+
+  .product-discription {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100% !important;
+  }
+  .main-img {
+    width: 50%;
+    height: 250px;
+  }
+  .main-content {
+    width: 50%;
+    gap: 10px;
+  }
+
+  .product-discription {
+    font-size: 14px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100% !important;
+  }
+  .main-img {
+    width: 30%;
+    height: 150px;
+  }
+  .main-content {
+    width: 70%;
+    gap: 10px;
+  }
+
+  .product-discription {
+    font-size: 14px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .container {
+    width: 100% !important;
+  }
+  .detail {
+    flex-direction: column;
+  }
+  .main-img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-content {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .product-discription {
+    font-size: 14px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .container {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .container {
+    width: 100% !important;
+  }
+}

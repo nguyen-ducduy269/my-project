@@ -6,7 +6,7 @@
 
 .contain {
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   overflow: hidden;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .item-cate .detail {
-  font-size: 14px;
+  font-size: 11px;
 }
 
 /* advertisement */
@@ -540,6 +540,27 @@
 
 .scoll-to-top a i:hover {
   opacity: 1;
+}
+
+.see-more-btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.see-more-btn button {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  background-image: linear-gradient(94deg, #ff0a0a, #ff7539);
+  border-radius: 20px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  border: unset;
 }
 
 @media only screen and (max-width: 1350px) {

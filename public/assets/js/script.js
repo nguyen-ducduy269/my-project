@@ -68,6 +68,8 @@ function renderProducts() {
   const content = document.querySelector(".content");
   products.map((item) => {
     const contentItem = document.createElement("div");
+    const aDiv = document.createElement("a");
+    aDiv.setAttribute("href", "detail-product.html");
     contentItem.classList.add("content-item");
 
     if (item.sale_off == null && item.choice == null) {
@@ -92,13 +94,10 @@ function renderProducts() {
             <div class="discription">${item.discription}</div>
 
             <div class="shipping">Free shipping</div>
-
-            <div class="content-button">
-              <button class="add-to-cart" id = ${item.id} >Add To Cart 🛒</button>
-            </div>
           </div>
       `;
-      content.appendChild(contentItem);
+      aDiv.appendChild(contentItem);
+      content.appendChild(aDiv);
     }
     if (item.sale_off && item.choice == null) {
       contentItem.innerHTML += `
@@ -124,13 +123,10 @@ function renderProducts() {
                   <div class="discription">${item.discription}</div>
 
                   <div class="shipping">Free shipping</div>
-
-                  <div class="content-button">
-                    <button class="add-to-cart" id = ${item.id}>Add To Cart 🛒</button>
-                  </div>
                 </div>
                 `;
-      content.appendChild(contentItem);
+      aDiv.appendChild(contentItem);
+      content.appendChild(aDiv);
     }
     if (item.sale_off == null && item.choice) {
       contentItem.innerHTML += `
@@ -159,13 +155,10 @@ function renderProducts() {
                   <div class="discription">${item.discription}</div>
 
                   <div class="shipping">Free shipping</div>
-
-                  <div class="content-button">
-                    <button class="add-to-cart" id = ${item.id}>Add To Cart 🛒</button>
-                  </div>
                 </div>
                 `;
-      content.appendChild(contentItem);
+      aDiv.appendChild(contentItem);
+      content.appendChild(aDiv);
     }
     if (item.sale_off && item.choice) {
       contentItem.innerHTML += `
@@ -197,256 +190,46 @@ function renderProducts() {
                   <div class="discription">${item.discription}</div>
 
                   <div class="shipping">Free shipping</div>
-
-                  <div class="content-button">
-                    <button class="add-to-cart" id = ${item.id}>Add To Cart 🛒</button>
-                  </div>
                 </div>
                 `;
-      content.appendChild(contentItem);
+      aDiv.appendChild(contentItem);
+      content.appendChild(aDiv);
     }
   });
 }
 renderProducts();
 
-// account log
-function signUp() {
-  const signUpButton = document.querySelector(".contain .register");
-  const accSignUp = document.querySelector(".account-sign-up");
+function cart() {
+  const order = JSON.parse(localStorage.getItem("order"));
 
-  signUpButton.addEventListener("click", () => {
-    accSignUp.classList.add("sign-active");
-    signUpForm();
-  });
-
-  const closeAccSignUp = document.querySelector(".sign-up-title button");
-  closeAccSignUp.addEventListener("click", () => {
-    accSignUp.classList.remove("sign-active");
-  });
-}
-signUp();
-
-function signUpForm() {
-  const fullName = document.getElementById("full-name");
-  fullName.addEventListener("click", (e) => {
-    e.target.value = "";
-  });
-  const emailSignUp = document.getElementById("email-sign-up");
-  emailSignUp.addEventListener("click", (e) => {
-    e.target.value = "";
-  });
-  const passSignUp = document.getElementById("password-sign-up");
-  passSignUp.addEventListener("click", (e) => {
-    e.target.value = "";
-  });
-  const reEnterPass = document.getElementById("password-re-enter");
-  reEnterPass.addEventListener("click", (e) => {
-    e.target.value = "";
-  });
-
-  const accSignUp = document.querySelector(".account-sign-up");
-  const createAcc = document.querySelector(".create-account");
-  createAcc.addEventListener("click", () => {
-    let fullNameValue = fullName.value;
-    let emailValue = emailSignUp.value;
-    let passValue = passSignUp.value;
-    let reEnterPassValue = reEnterPass.value;
-    console.log("1", fullNameValue);
-    console.log("2", emailValue);
-    console.log("3", passValue);
-    console.log("4", reEnterPassValue);
-    if (!fullNameValue && emailValue && passValue && reEnterPassValue) {
-      alert("You have not entered your name!");
-    }
-    if (fullNameValue && !emailValue && passValue && reEnterPassValue) {
-      alert("You must log in to your account!");
-    }
-    if (fullNameValue && emailValue && !passValue && reEnterPassValue) {
-      alert("You have not entered your password!");
-    }
-    if (fullNameValue && emailValue && passValue && !reEnterPassValue) {
-      alert("Please re-enter your password!");
-    }
-    if (fullNameValue && emailValue && passValue && reEnterPassValue) {
-      if (passValue != reEnterPassValue) {
-        alert("Re-entered password is incorrect!");
-      } else if (passValue == reEnterPassValue) {
-        const account = {
-          full_name: fullName.value,
-          email: emailSignUp.value,
-          password: passSignUp.value,
-        };
-        localStorage.setItem("account", JSON.stringify(account));
-        accSignUp.classList.remove("sign-active");
-        alert("You have successfully registered an account!");
-      }
-    }
-  });
+  const numberOrder = document.querySelector(".header .number");
+  numberOrder.innerHTML = order.length;
 }
 
-function signIn() {
-  const signInButton = document.querySelector(".contain .sign-in");
-  const accSignIn = document.querySelector(".account-sign-in");
+cart();
 
-  signInButton.addEventListener("click", () => {
-    accSignIn.classList.add("sign-active");
-    signInForm();
-  });
+// function addProducts() {
+//   const array = JSON.parse(localStorage.getItem("array"));
+//   const numberItem = document.querySelector("header .number");
+//   numberItem.innerHTML = array.length;
 
-  const closeAccSignIn = document.querySelector(".sign-in-title button");
-  closeAccSignIn.addEventListener("click", () => {
-    accSignIn.classList.remove("sign-active");
-  });
-}
-signIn();
+//   const btns = document.querySelectorAll(".add-to-cart");
+//   const btn = Array.prototype.slice.call(btns);
+//   let newArray = [...array];
+//   btn.forEach((b) =>
+//     b.addEventListener("click", () => {
+//       const idProduct = b.getAttribute("id");
+//       const productFind = products.find((el) => el.id === +idProduct);
 
-function signInForm() {
-  const localAccount = JSON.parse(localStorage.getItem("account"));
-  console.log("localAccount", localAccount);
+//       newArray.push(productFind);
+//       localStorage.setItem("array", JSON.stringify(newArray));
 
-  const emailSignIn = document.getElementById("email-sign-in");
-  emailSignIn.addEventListener("click", (e) => {
-    e.target.value = "";
-  });
-  const passSignIn = document.getElementById("pass-sign-in");
-  passSignIn.addEventListener("click", (e) => {
-    e.target.value = "";
-  });
-
-  const accSignIn = document.querySelector(".account-sign-in");
-  const signInBtn = document.querySelector(".sign-in-button");
-  signInBtn.addEventListener("click", () => {
-    let emailSignInValue = emailSignIn.value;
-    let passSignInValue = passSignIn.value;
-
-    if (emailSignInValue && !passSignInValue) {
-      alert("You must enter an account!");
-    }
-    if (emailSignInValue && !passSignInValue) {
-      alert("You must enter a password!");
-    }
-    if (emailSignInValue && passSignInValue) {
-      if (
-        emailSignInValue != localAccount.email &&
-        passSignInValue == localAccount.password
-      ) {
-        alert("Wrong account!");
-      }
-      if (
-        emailSignInValue == localAccount.email &&
-        passSignInValue != localAccount.password
-      ) {
-        alert("Wrong password!");
-      }
-      if (
-        emailSignInValue == localAccount.email &&
-        passSignInValue == localAccount.password
-      ) {
-        alert("Successful login!");
-        accSignIn.classList.remove("sign-active");
-
-        const main = document.querySelector(".main");
-        main.innerHTML = "";
-        main.innerHTML += `
-            <div class="main">
-              <div class="account">
-                <img src="./assets/image/account.webp" alt="" />
-              </div>
-              <div class="aftext">Hi ${localAccount.full_name} <br />Welcome to AliExpress</div>
-
-              <div class="account-contact">
-                <a href="">
-                  <img src="./assets/image/user.png" alt="" />
-                  <h4>Account</h4>
-                </a>
-
-                <a href="myorder.html">
-                  <img src="./assets/image/clipboard.png" alt="" />
-                  <h4>Orders</h4>
-                </a>
-
-                <a href="">
-                  <img id="log-out" src="./assets/image/logout.png" alt="" />
-                  <h4>Log out</h4>
-                </a>
-              </div>
-            </div>
-            `;
-        addToCart();
-        addProducts();
-        logOut();
-
-        const cartItem = document.querySelector(".shopping a");
-        cartItem.setAttribute("href", "myorder.html");
-      }
-    }
-  });
-}
-
-let array = [];
-function addToCart() {
-  const btns = document.querySelectorAll(".add-to-cart");
-  const btn = Array.prototype.slice.call(btns);
-  btn.forEach((b) =>
-    b.addEventListener("click", () => {
-      const idProduct = b.getAttribute("id");
-      const productFind = products.find((el) => el.id === +idProduct);
-
-      array.push(productFind);
-      localStorage.setItem("array", JSON.stringify(array));
-
-      const numberItem = document.querySelector("header .number");
-      numberItem.innerHTML = array.length;
-    })
-  );
-}
-
-function addProducts() {
-  const array = JSON.parse(localStorage.getItem("array"));
-  const numberItem = document.querySelector("header .number");
-  numberItem.innerHTML = array.length;
-
-  const btns = document.querySelectorAll(".add-to-cart");
-  const btn = Array.prototype.slice.call(btns);
-  let newArray = [...array];
-  btn.forEach((b) =>
-    b.addEventListener("click", () => {
-      const idProduct = b.getAttribute("id");
-      const productFind = products.find((el) => el.id === +idProduct);
-
-      newArray.push(productFind);
-      localStorage.setItem("array", JSON.stringify(newArray));
-
-      const numberItem = document.querySelector("header .number");
-      numberItem.innerHTML = newArray.length;
-    })
-  );
-}
-
-function logOut() {
-  const logOutBtn = document.getElementById("log-out");
-  logOutBtn.addEventListener("click", () => {
-    const main = document.querySelector(".main");
-    main.innerHTML = "";
-    if (confirm("Bạn có chắc muốn đăng xuất?") == true) {
-      main.innerHTML += `
-        <div class="main">
-          <div class="account">
-            <img src="./assets/image/account.webp" alt="" />
-          </div>
-          <div class="text">Welcome to AliExpress</div>
-
-          <div class="button">
-            <button class="register">Register</button>
-            <button class="sign-in">Sign in</button>
-          </div>
-        </div>
-      `;
-    } else {
-      return false;
-    }
-  });
-}
+//       const numberItem = document.querySelector("header .number");
+//       numberItem.innerHTML = newArray.length;
+//     })
+//   );
+// }
+// addProducts();
 
 $("a[href='#top']").click(function () {
   $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -468,7 +251,6 @@ function filterProduct() {
 
     filteredProducts.forEach((item) => {
       let contentItem = document.createElement("div");
-      console.log(item.choice);
       contentItem.classList.add("content-item");
 
       contentItem.innerHTML = `
@@ -834,3 +616,24 @@ function filterProduct() {
   // );
 }
 filterProduct();
+
+const product = [];
+const detailProducts = () => {
+  const contentItem = document.querySelectorAll(".content-item");
+
+  contentItem.forEach((item) => {
+    item.addEventListener("click", () => {
+      const imageItem = item.querySelector("img");
+      const imageSrc = imageItem.getAttribute("src");
+
+      const itemPrice = item.querySelector(".item-price p").innerHTML;
+      const soldNumber = item.querySelector(".sold span").innerHTML;
+      const vote = item.querySelector(".next-sold").innerHTML;
+      const discription = item.querySelector(".discription").innerHTML;
+      product.push(imageSrc, soldNumber, vote, itemPrice, discription);
+      localStorage.setItem("product", JSON.stringify(product));
+    });
+  });
+};
+
+detailProducts();

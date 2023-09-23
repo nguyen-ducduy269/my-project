@@ -1,4 +1,5 @@
-const shoppingItem = JSON.parse(localStorage.getItem("array"));
+const shoppingItem = JSON.parse(localStorage.getItem("order"));
+console.log(shoppingItem);
 
 const orderH1 = document.querySelector(".orders h1");
 orderH1.innerHTML = "Shopping Cart" + " " + "(" + shoppingItem.length + ")";
@@ -24,11 +25,11 @@ function renderProduct() {
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <img src=${item.image} alt="" />
+        <img src=${item[0]} alt="" />
         <div class="order-detail">
-            <p>${item.discription}</p>
+            <p>${item[4]}</p>
     
-            <div class="order-cost">VND ₫<span>${item.price}</span></div>
+            <div class="order-cost">VND ₫<span>${item[3]}</span></div>
             <div class="shipping">Free shipping</div>
     
             <div class="size-ring">
@@ -63,11 +64,11 @@ function renderProduct() {
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
-          <img src=${item.image} alt="" />
+          <img src=${item[0]} alt="" />
           <div class="order-detail">
-              <p>${item.discription}</p>
+              <p>${item[4]}</p>
       
-              <div class="order-cost">VND ₫<span>${item.price}</span></div>
+              <div class="order-cost">VND ₫<span>${item[3]}</span></div>
               <div class="shipping">Free shipping</div>
       
               <div class="to-summary">
@@ -93,11 +94,11 @@ function renderProduct() {
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <img src=${item.image} alt="" />
+        <img src=${item[0]}p alt="" />
         <div class="order-detail">
-            <p>${item.discription}</p>
+            <p>${item[4]}</p>
     
-            <div class="order-cost">VND ₫<span>${item.after_price}</span></div>
+            <div class="order-cost">VND ₫<span>${item[3]}</span></div>
             <div class="shipping">Free shipping</div>
     
             <div class="to-summary">

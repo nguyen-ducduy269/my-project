@@ -163,7 +163,7 @@ const products = [
     id: 3,
     image:
       "./assets/image/product/Luxury-Fashion-Mens-Watches-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 46.764,
+    after_price: 46.764,
     before_price: 146.637,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -212,7 +212,7 @@ const products = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -227,7 +227,7 @@ const products = [
     id: 8,
     image:
       "https://ae01.alicdn.com/kf/S7aa25fb0590b47f387fa10d8c34874e0o/Men-Watch-Sports-Quartz-Watches-Men-Waterproof-Chronograph-Wristwatch-Mens-Military-Clock-Man-Relogio-Masculino.jpg_220x220xz.jpg_.webp",
-    price: 253.935,
+    after_price: 253.935,
     before_price: 761.853,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -252,7 +252,7 @@ const products = [
     id: 10,
     image:
       "https://ae01.alicdn.com/kf/S388da9fc1f044ad39fae434edd8421d83/New-2023-Usb-3-0-Pendrive-2TB-High-Speed-Pen-Drive-16TB-Metal-Cle-Usb-Flash.jpg_220x220xz.jpg_.webp",
-    price: 30.475,
+    after_price: 30.475,
     before_price: 50.77,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -282,7 +282,7 @@ const products = [
     id: 12,
     image:
       "https://ae01.alicdn.com/kf/S443b3605f110411ab81e1edb0cc2b79e2/2023-USB-Electric-Lighters-Windproof-USB-Rechargeable-Touch-Windproof-Cigarette-Accessories-Electric-Lighter-Portable-e-ziggarte.jpg_220x220xz.jpg_.webp",
-    price: 34.779,
+    after_price: 34.779,
     before_price: 74.023,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -297,7 +297,7 @@ const products = [
     id: 13,
     image:
       "https://ae01.alicdn.com/kf/Sa8eaedc39d364a468a122eae8e66c516Q/Men-Military-Watch-Digital-50m-Waterproof-Wristwatch-LED-Quartz-Clock-Sport-Watch-Male-Big-Watches-Men.jpg_220x220xz.jpg_.webp",
-    price: 159.091,
+    after_price: 159.091,
     before_price: 545.658,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -332,7 +332,7 @@ const products = [
     id: 16,
     image:
       "https://ae01.alicdn.com/kf/S624f58ebe30548b18c4ed9e3b078ec5aI/2pcs-Set-Fashion-Mens-Sports-Watches-Man-Business-Quartz-Wristwatch-Luxury-Men-Casual-Clock-Watch-Relogio.jpg_220x220xz.jpg_.webp",
-    price: 53.814,
+    after_price: 53.814,
     before_price: 146.467,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -370,7 +370,7 @@ const products = [
     id: 19,
     image:
       "https://ae01.alicdn.com/kf/S1b267460fc174fac944b5ea6cf3b2b755/2022-New-Fashion-Female-Shoulder-Bag-Rhombus-Embroidered-Solid-Color-Chain-Women-Shoulder-Crossbody-Casual-Trendy.jpg_220x220xz.jpg_.webp",
-    price: 53.344,
+    after_price: 53.344,
     before_price: 140.527,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -385,7 +385,7 @@ const products = [
     id: 20,
     image:
       "https://ae01.alicdn.com/kf/S3a11b85341d448ffa339d504553b5b3eB/Men-s-Wallet-Leather-Billfold-Slim-Hipster-Cowhide-Credit-Card-ID-Holders-Inserts-Coin-Purses-Luxury.jpg_220x220xz.jpg_.webp",
-    price: 71.673,
+    after_price: 71.673,
     choice: [
       "./assets/image/product/top-selling.png",
       "./assets/image/product/190x64.webp",
@@ -410,7 +410,7 @@ const products = [
     id: 22,
     image:
       "https://ae01.alicdn.com/kf/S63bc74e3da9d4dc5befcee58f1fee22c1/Quartz-Watch-Men-Business-Fashion-Fake-Three-Eye-Six-Pin-Calendar-Watch-For-Men-Mesh-Belt.jpg_220x220xz.jpg_.webp",
-    price: 93.763,
+    after_price: 93.763,
     before_price: 246.745,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -425,7 +425,7 @@ const products = [
     id: 23,
     image:
       "https://ae01.alicdn.com/kf/Sfb9d9c7461ef4d099357187e02749521B/Electric-Water-Storage-Gun-Pistol-Shooting-Toy-Portable-Children-Summer-Beach-Outdoor-Fight-Fantasy-Toys-for.jpg_220x220xz.jpg_.webp",
-    price: 161.206,
+    after_price: 161.206,
     before_price: 489.259,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -451,7 +451,7 @@ const products = [
     id: 25,
     image:
       "https://ae01.alicdn.com/kf/Se921fb855b8f454e8a64f4d86c4353ffL/SMAEL-New-Sport-Watch-Mens-50M-Waterproof-Clock-Alarm-Reloj-Hombre-1545D-Dual-Display-Wristwatch-Quartz.jpg_220x220xz.jpg_.webp",
-    price: 140.057,
+    after_price: 140.057,
     before_price: 425.341,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -466,7 +466,7 @@ const products = [
     id: 26,
     image:
       "https://ae01.alicdn.com/kf/H35a86aa144784f6fab7f372ca69ba109i/Fashion-Letters-Embroidery-Women-Men-Baseball-Caps-Female-Male-Sport-Visors-Snapback-Cap-Sun-Hat-For.jpg_220x220xz.jpg_.webp",
-    price: 88.123,
+    after_price: 88.123,
     before_price: 187.526,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -492,7 +492,7 @@ const products = [
     id: 28,
     image:
       "https://ae01.alicdn.com/kf/S95124749f6e444519179ac91cb7d34dbJ/Creative-Frameless-DIY-Wall-Clock-Wall-Decal-Home-Silent-Clock-Living-Room-Office-Wall-Decoration.jpg_220x220xz.jpg_.webp",
-    price: 42.534,
+    after_price: 42.534,
     before_price: 134.417,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -540,7 +540,7 @@ const products = [
     id: 20,
     image:
       "https://ae01.alicdn.com/kf/S3a11b85341d448ffa339d504553b5b3eB/Men-s-Wallet-Leather-Billfold-Slim-Hipster-Cowhide-Credit-Card-ID-Holders-Inserts-Coin-Purses-Luxury.jpg_220x220xz.jpg_.webp",
-    price: 71.673,
+    after_price: 71.673,
     choice: [
       "./assets/image/product/top-selling.png",
       "./assets/image/product/190x64.webp",
@@ -565,7 +565,7 @@ const products = [
     id: 22,
     image:
       "https://ae01.alicdn.com/kf/S63bc74e3da9d4dc5befcee58f1fee22c1/Quartz-Watch-Men-Business-Fashion-Fake-Three-Eye-Six-Pin-Calendar-Watch-For-Men-Mesh-Belt.jpg_220x220xz.jpg_.webp",
-    price: 93.763,
+    after_price: 93.763,
     before_price: 246.745,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -580,7 +580,7 @@ const products = [
     id: 23,
     image:
       "https://ae01.alicdn.com/kf/Sfb9d9c7461ef4d099357187e02749521B/Electric-Water-Storage-Gun-Pistol-Shooting-Toy-Portable-Children-Summer-Beach-Outdoor-Fight-Fantasy-Toys-for.jpg_220x220xz.jpg_.webp",
-    price: 161.206,
+    after_price: 161.206,
     before_price: 489.259,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -628,7 +628,7 @@ const products = [
     id: 3,
     image:
       "./assets/image/product/Luxury-Fashion-Mens-Watches-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 46.764,
+    after_price: 46.764,
     before_price: 146.637,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -653,7 +653,7 @@ const products = [
     id: 16,
     image:
       "https://ae01.alicdn.com/kf/S624f58ebe30548b18c4ed9e3b078ec5aI/2pcs-Set-Fashion-Mens-Sports-Watches-Man-Business-Quartz-Wristwatch-Luxury-Men-Casual-Clock-Watch-Relogio.jpg_220x220xz.jpg_.webp",
-    price: 53.814,
+    after_price: 53.814,
     before_price: 146.467,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -691,7 +691,7 @@ const products = [
     id: 26,
     image:
       "https://ae01.alicdn.com/kf/H35a86aa144784f6fab7f372ca69ba109i/Fashion-Letters-Embroidery-Women-Men-Baseball-Caps-Female-Male-Sport-Visors-Snapback-Cap-Sun-Hat-For.jpg_220x220xz.jpg_.webp",
-    price: 88.123,
+    after_price: 88.123,
     before_price: 187.526,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -717,7 +717,7 @@ const products = [
     id: 28,
     image:
       "https://ae01.alicdn.com/kf/S95124749f6e444519179ac91cb7d34dbJ/Creative-Frameless-DIY-Wall-Clock-Wall-Decal-Home-Silent-Clock-Living-Room-Office-Wall-Decoration.jpg_220x220xz.jpg_.webp",
-    price: 42.534,
+    after_price: 42.534,
     before_price: 134.417,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -775,7 +775,7 @@ const products = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -790,7 +790,7 @@ const products = [
     id: 8,
     image:
       "https://ae01.alicdn.com/kf/S7aa25fb0590b47f387fa10d8c34874e0o/Men-Watch-Sports-Quartz-Watches-Men-Waterproof-Chronograph-Wristwatch-Mens-Military-Clock-Man-Relogio-Masculino.jpg_220x220xz.jpg_.webp",
-    price: 253.935,
+    after_price: 253.935,
     before_price: 761.853,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -826,7 +826,7 @@ const products = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -863,7 +863,7 @@ const products = [
     id: 3,
     image:
       "./assets/image/product/Luxury-Fashion-Mens-Watches-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 46.764,
+    after_price: 46.764,
     before_price: 146.637,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -912,7 +912,7 @@ const products = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -961,7 +961,7 @@ const products = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -976,7 +976,7 @@ const products = [
     id: 8,
     image:
       "https://ae01.alicdn.com/kf/S7aa25fb0590b47f387fa10d8c34874e0o/Men-Watch-Sports-Quartz-Watches-Men-Waterproof-Chronograph-Wristwatch-Mens-Military-Clock-Man-Relogio-Masculino.jpg_220x220xz.jpg_.webp",
-    price: 253.935,
+    after_price: 253.935,
     before_price: 761.853,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1001,7 +1001,7 @@ const products = [
     id: 10,
     image:
       "https://ae01.alicdn.com/kf/S388da9fc1f044ad39fae434edd8421d83/New-2023-Usb-3-0-Pendrive-2TB-High-Speed-Pen-Drive-16TB-Metal-Cle-Usb-Flash.jpg_220x220xz.jpg_.webp",
-    price: 30.475,
+    after_price: 30.475,
     before_price: 50.77,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1031,7 +1031,7 @@ const products = [
     id: 12,
     image:
       "https://ae01.alicdn.com/kf/S443b3605f110411ab81e1edb0cc2b79e2/2023-USB-Electric-Lighters-Windproof-USB-Rechargeable-Touch-Windproof-Cigarette-Accessories-Electric-Lighter-Portable-e-ziggarte.jpg_220x220xz.jpg_.webp",
-    price: 34.779,
+    after_price: 34.779,
     before_price: 74.023,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -1046,7 +1046,7 @@ const products = [
     id: 13,
     image:
       "https://ae01.alicdn.com/kf/Sa8eaedc39d364a468a122eae8e66c516Q/Men-Military-Watch-Digital-50m-Waterproof-Wristwatch-LED-Quartz-Clock-Sport-Watch-Male-Big-Watches-Men.jpg_220x220xz.jpg_.webp",
-    price: 159.091,
+    after_price: 159.091,
     before_price: 545.658,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1081,7 +1081,7 @@ const products = [
     id: 16,
     image:
       "https://ae01.alicdn.com/kf/S624f58ebe30548b18c4ed9e3b078ec5aI/2pcs-Set-Fashion-Mens-Sports-Watches-Man-Business-Quartz-Wristwatch-Luxury-Men-Casual-Clock-Watch-Relogio.jpg_220x220xz.jpg_.webp",
-    price: 53.814,
+    after_price: 53.814,
     before_price: 146.467,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1143,7 +1143,7 @@ const products = [
     id: 28,
     image:
       "https://ae01.alicdn.com/kf/S95124749f6e444519179ac91cb7d34dbJ/Creative-Frameless-DIY-Wall-Clock-Wall-Decal-Home-Silent-Clock-Living-Room-Office-Wall-Decoration.jpg_220x220xz.jpg_.webp",
-    price: 42.534,
+    after_price: 42.534,
     before_price: 134.417,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1191,7 +1191,7 @@ const products = [
     id: 20,
     image:
       "https://ae01.alicdn.com/kf/S3a11b85341d448ffa339d504553b5b3eB/Men-s-Wallet-Leather-Billfold-Slim-Hipster-Cowhide-Credit-Card-ID-Holders-Inserts-Coin-Purses-Luxury.jpg_220x220xz.jpg_.webp",
-    price: 71.673,
+    after_price: 71.673,
     choice: [
       "./assets/image/product/top-selling.png",
       "./assets/image/product/190x64.webp",
@@ -1230,7 +1230,7 @@ const allProducts = [
     id: 3,
     image:
       "./assets/image/product/Luxury-Fashion-Mens-Watches-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 46.764,
+    after_price: 46.764,
     before_price: 146.637,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1279,7 +1279,7 @@ const allProducts = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1294,7 +1294,7 @@ const allProducts = [
     id: 8,
     image:
       "https://ae01.alicdn.com/kf/S7aa25fb0590b47f387fa10d8c34874e0o/Men-Watch-Sports-Quartz-Watches-Men-Waterproof-Chronograph-Wristwatch-Mens-Military-Clock-Man-Relogio-Masculino.jpg_220x220xz.jpg_.webp",
-    price: 253.935,
+    after_price: 253.935,
     before_price: 761.853,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1319,7 +1319,7 @@ const allProducts = [
     id: 10,
     image:
       "https://ae01.alicdn.com/kf/S388da9fc1f044ad39fae434edd8421d83/New-2023-Usb-3-0-Pendrive-2TB-High-Speed-Pen-Drive-16TB-Metal-Cle-Usb-Flash.jpg_220x220xz.jpg_.webp",
-    price: 30.475,
+    after_price: 30.475,
     before_price: 50.77,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1349,7 +1349,7 @@ const allProducts = [
     id: 12,
     image:
       "https://ae01.alicdn.com/kf/S443b3605f110411ab81e1edb0cc2b79e2/2023-USB-Electric-Lighters-Windproof-USB-Rechargeable-Touch-Windproof-Cigarette-Accessories-Electric-Lighter-Portable-e-ziggarte.jpg_220x220xz.jpg_.webp",
-    price: 34.779,
+    after_price: 34.779,
     before_price: 74.023,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -1364,7 +1364,7 @@ const allProducts = [
     id: 13,
     image:
       "https://ae01.alicdn.com/kf/Sa8eaedc39d364a468a122eae8e66c516Q/Men-Military-Watch-Digital-50m-Waterproof-Wristwatch-LED-Quartz-Clock-Sport-Watch-Male-Big-Watches-Men.jpg_220x220xz.jpg_.webp",
-    price: 159.091,
+    after_price: 159.091,
     before_price: 545.658,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1399,7 +1399,7 @@ const allProducts = [
     id: 16,
     image:
       "https://ae01.alicdn.com/kf/S624f58ebe30548b18c4ed9e3b078ec5aI/2pcs-Set-Fashion-Mens-Sports-Watches-Man-Business-Quartz-Wristwatch-Luxury-Men-Casual-Clock-Watch-Relogio.jpg_220x220xz.jpg_.webp",
-    price: 53.814,
+    after_price: 53.814,
     before_price: 146.467,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1437,7 +1437,7 @@ const allProducts = [
     id: 19,
     image:
       "https://ae01.alicdn.com/kf/S1b267460fc174fac944b5ea6cf3b2b755/2022-New-Fashion-Female-Shoulder-Bag-Rhombus-Embroidered-Solid-Color-Chain-Women-Shoulder-Crossbody-Casual-Trendy.jpg_220x220xz.jpg_.webp",
-    price: 53.344,
+    after_price: 53.344,
     before_price: 140.527,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1452,7 +1452,7 @@ const allProducts = [
     id: 20,
     image:
       "https://ae01.alicdn.com/kf/S3a11b85341d448ffa339d504553b5b3eB/Men-s-Wallet-Leather-Billfold-Slim-Hipster-Cowhide-Credit-Card-ID-Holders-Inserts-Coin-Purses-Luxury.jpg_220x220xz.jpg_.webp",
-    price: 71.673,
+    after_price: 71.673,
     choice: [
       "./assets/image/product/top-selling.png",
       "./assets/image/product/190x64.webp",
@@ -1477,7 +1477,7 @@ const allProducts = [
     id: 22,
     image:
       "https://ae01.alicdn.com/kf/S63bc74e3da9d4dc5befcee58f1fee22c1/Quartz-Watch-Men-Business-Fashion-Fake-Three-Eye-Six-Pin-Calendar-Watch-For-Men-Mesh-Belt.jpg_220x220xz.jpg_.webp",
-    price: 93.763,
+    after_price: 93.763,
     before_price: 246.745,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1492,7 +1492,7 @@ const allProducts = [
     id: 23,
     image:
       "https://ae01.alicdn.com/kf/Sfb9d9c7461ef4d099357187e02749521B/Electric-Water-Storage-Gun-Pistol-Shooting-Toy-Portable-Children-Summer-Beach-Outdoor-Fight-Fantasy-Toys-for.jpg_220x220xz.jpg_.webp",
-    price: 161.206,
+    after_price: 161.206,
     before_price: 489.259,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1518,7 +1518,7 @@ const allProducts = [
     id: 25,
     image:
       "https://ae01.alicdn.com/kf/Se921fb855b8f454e8a64f4d86c4353ffL/SMAEL-New-Sport-Watch-Mens-50M-Waterproof-Clock-Alarm-Reloj-Hombre-1545D-Dual-Display-Wristwatch-Quartz.jpg_220x220xz.jpg_.webp",
-    price: 140.057,
+    after_price: 140.057,
     before_price: 425.341,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1533,7 +1533,7 @@ const allProducts = [
     id: 26,
     image:
       "https://ae01.alicdn.com/kf/H35a86aa144784f6fab7f372ca69ba109i/Fashion-Letters-Embroidery-Women-Men-Baseball-Caps-Female-Male-Sport-Visors-Snapback-Cap-Sun-Hat-For.jpg_220x220xz.jpg_.webp",
-    price: 88.123,
+    after_price: 88.123,
     before_price: 187.526,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -1559,7 +1559,7 @@ const allProducts = [
     id: 28,
     image:
       "https://ae01.alicdn.com/kf/S95124749f6e444519179ac91cb7d34dbJ/Creative-Frameless-DIY-Wall-Clock-Wall-Decal-Home-Silent-Clock-Living-Room-Office-Wall-Decoration.jpg_220x220xz.jpg_.webp",
-    price: 42.534,
+    after_price: 42.534,
     before_price: 134.417,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1584,7 +1584,7 @@ const allProducts = [
     id: 30,
     image:
       "https://ae01.alicdn.com/kf/S36008550e7df48c19c6f28cbc79ca80cz/Men-s-Sneakers-2022-New-Lightweight-Men-Vulcanized-Shoes-Anti-skid-Breathable-Male-Trend-Casual-Shoes.jpg_220x220xz.jpg_.webphttps://ae01.alicdn.com/kf/S36008550e7df48c19c6f28cbc79ca80cz/Men-s-Sneakers-2022-New-Lightweight-Men-Vulcanized-Shoes-Anti-skid-Breathable-Male-Trend-Casual-Shoes.jpg_220x220xz.jpg_.webp",
-    price: 232.645,
+    after_price: 232.645,
     sale_off: "₫ 93,998 off every ₫ 704,984",
     choice: "./assets/image/product/limited-deals.png",
     first_sold: "20,000+ sold",
@@ -1607,7 +1607,7 @@ const allProducts = [
     id: 20,
     image:
       "https://ae01.alicdn.com/kf/S3a11b85341d448ffa339d504553b5b3eB/Men-s-Wallet-Leather-Billfold-Slim-Hipster-Cowhide-Credit-Card-ID-Holders-Inserts-Coin-Purses-Luxury.jpg_220x220xz.jpg_.webp",
-    price: 71.673,
+    after_price: 71.673,
     choice: [
       "./assets/image/product/top-selling.png",
       "./assets/image/product/190x64.webp",
@@ -1632,7 +1632,7 @@ const allProducts = [
     id: 22,
     image:
       "https://ae01.alicdn.com/kf/S63bc74e3da9d4dc5befcee58f1fee22c1/Quartz-Watch-Men-Business-Fashion-Fake-Three-Eye-Six-Pin-Calendar-Watch-For-Men-Mesh-Belt.jpg_220x220xz.jpg_.webp",
-    price: 93.763,
+    after_price: 93.763,
     before_price: 246.745,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1647,7 +1647,7 @@ const allProducts = [
     id: 23,
     image:
       "https://ae01.alicdn.com/kf/Sfb9d9c7461ef4d099357187e02749521B/Electric-Water-Storage-Gun-Pistol-Shooting-Toy-Portable-Children-Summer-Beach-Outdoor-Fight-Fantasy-Toys-for.jpg_220x220xz.jpg_.webp",
-    price: 161.206,
+    after_price: 161.206,
     before_price: 489.259,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1695,7 +1695,7 @@ const allProducts = [
     id: 3,
     image:
       "./assets/image/product/Luxury-Fashion-Mens-Watches-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 46.764,
+    after_price: 46.764,
     before_price: 146.637,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1720,7 +1720,7 @@ const allProducts = [
     id: 16,
     image:
       "https://ae01.alicdn.com/kf/S624f58ebe30548b18c4ed9e3b078ec5aI/2pcs-Set-Fashion-Mens-Sports-Watches-Man-Business-Quartz-Wristwatch-Luxury-Men-Casual-Clock-Watch-Relogio.jpg_220x220xz.jpg_.webp",
-    price: 53.814,
+    after_price: 53.814,
     before_price: 146.467,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1758,7 +1758,7 @@ const allProducts = [
     id: 26,
     image:
       "https://ae01.alicdn.com/kf/H35a86aa144784f6fab7f372ca69ba109i/Fashion-Letters-Embroidery-Women-Men-Baseball-Caps-Female-Male-Sport-Visors-Snapback-Cap-Sun-Hat-For.jpg_220x220xz.jpg_.webp",
-    price: 88.123,
+    after_price: 88.123,
     before_price: 187.526,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -1784,7 +1784,7 @@ const allProducts = [
     id: 28,
     image:
       "https://ae01.alicdn.com/kf/S95124749f6e444519179ac91cb7d34dbJ/Creative-Frameless-DIY-Wall-Clock-Wall-Decal-Home-Silent-Clock-Living-Room-Office-Wall-Decoration.jpg_220x220xz.jpg_.webp",
-    price: 42.534,
+    after_price: 42.534,
     before_price: 134.417,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1809,7 +1809,7 @@ const allProducts = [
     id: 30,
     image:
       "https://ae01.alicdn.com/kf/S36008550e7df48c19c6f28cbc79ca80cz/Men-s-Sneakers-2022-New-Lightweight-Men-Vulcanized-Shoes-Anti-skid-Breathable-Male-Trend-Casual-Shoes.jpg_220x220xz.jpg_.webphttps://ae01.alicdn.com/kf/S36008550e7df48c19c6f28cbc79ca80cz/Men-s-Sneakers-2022-New-Lightweight-Men-Vulcanized-Shoes-Anti-skid-Breathable-Male-Trend-Casual-Shoes.jpg_220x220xz.jpg_.webp",
-    price: 232.645,
+    after_price: 232.645,
     sale_off: "₫ 93,998 off every ₫ 704,984",
     choice: "./assets/image/product/limited-deals.png",
     first_sold: "20,000+ sold",
@@ -1842,7 +1842,7 @@ const allProducts = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1857,7 +1857,7 @@ const allProducts = [
     id: 8,
     image:
       "https://ae01.alicdn.com/kf/S7aa25fb0590b47f387fa10d8c34874e0o/Men-Watch-Sports-Quartz-Watches-Men-Waterproof-Chronograph-Wristwatch-Mens-Military-Clock-Man-Relogio-Masculino.jpg_220x220xz.jpg_.webp",
-    price: 253.935,
+    after_price: 253.935,
     before_price: 761.853,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1893,7 +1893,7 @@ const allProducts = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1930,7 +1930,7 @@ const allProducts = [
     id: 3,
     image:
       "./assets/image/product/Luxury-Fashion-Mens-Watches-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 46.764,
+    after_price: 46.764,
     before_price: 146.637,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -1979,7 +1979,7 @@ const allProducts = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2028,7 +2028,7 @@ const allProducts = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2043,7 +2043,7 @@ const allProducts = [
     id: 8,
     image:
       "https://ae01.alicdn.com/kf/S7aa25fb0590b47f387fa10d8c34874e0o/Men-Watch-Sports-Quartz-Watches-Men-Waterproof-Chronograph-Wristwatch-Mens-Military-Clock-Man-Relogio-Masculino.jpg_220x220xz.jpg_.webp",
-    price: 253.935,
+    after_price: 253.935,
     before_price: 761.853,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2068,7 +2068,7 @@ const allProducts = [
     id: 10,
     image:
       "https://ae01.alicdn.com/kf/S388da9fc1f044ad39fae434edd8421d83/New-2023-Usb-3-0-Pendrive-2TB-High-Speed-Pen-Drive-16TB-Metal-Cle-Usb-Flash.jpg_220x220xz.jpg_.webp",
-    price: 30.475,
+    after_price: 30.475,
     before_price: 50.77,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2098,7 +2098,7 @@ const allProducts = [
     id: 12,
     image:
       "https://ae01.alicdn.com/kf/S443b3605f110411ab81e1edb0cc2b79e2/2023-USB-Electric-Lighters-Windproof-USB-Rechargeable-Touch-Windproof-Cigarette-Accessories-Electric-Lighter-Portable-e-ziggarte.jpg_220x220xz.jpg_.webp",
-    price: 34.779,
+    after_price: 34.779,
     before_price: 74.023,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -2113,7 +2113,7 @@ const allProducts = [
     id: 13,
     image:
       "https://ae01.alicdn.com/kf/Sa8eaedc39d364a468a122eae8e66c516Q/Men-Military-Watch-Digital-50m-Waterproof-Wristwatch-LED-Quartz-Clock-Sport-Watch-Male-Big-Watches-Men.jpg_220x220xz.jpg_.webp",
-    price: 159.091,
+    after_price: 159.091,
     before_price: 545.658,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2148,7 +2148,7 @@ const allProducts = [
     id: 16,
     image:
       "https://ae01.alicdn.com/kf/S624f58ebe30548b18c4ed9e3b078ec5aI/2pcs-Set-Fashion-Mens-Sports-Watches-Man-Business-Quartz-Wristwatch-Luxury-Men-Casual-Clock-Watch-Relogio.jpg_220x220xz.jpg_.webp",
-    price: 53.814,
+    after_price: 53.814,
     before_price: 146.467,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2210,7 +2210,7 @@ const allProducts = [
     id: 28,
     image:
       "https://ae01.alicdn.com/kf/S95124749f6e444519179ac91cb7d34dbJ/Creative-Frameless-DIY-Wall-Clock-Wall-Decal-Home-Silent-Clock-Living-Room-Office-Wall-Decoration.jpg_220x220xz.jpg_.webp",
-    price: 42.534,
+    after_price: 42.534,
     before_price: 134.417,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2258,7 +2258,7 @@ const allProducts = [
     id: 20,
     image:
       "https://ae01.alicdn.com/kf/S3a11b85341d448ffa339d504553b5b3eB/Men-s-Wallet-Leather-Billfold-Slim-Hipster-Cowhide-Credit-Card-ID-Holders-Inserts-Coin-Purses-Luxury.jpg_220x220xz.jpg_.webp",
-    price: 71.673,
+    after_price: 71.673,
     choice: [
       "./assets/image/product/top-selling.png",
       "./assets/image/product/190x64.webp",
@@ -2294,7 +2294,7 @@ const allProducts = [
     id: 3,
     image:
       "./assets/image/product/Luxury-Fashion-Mens-Watches-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 46.764,
+    after_price: 46.764,
     before_price: 146.637,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2343,7 +2343,7 @@ const allProducts = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2358,7 +2358,7 @@ const allProducts = [
     id: 8,
     image:
       "https://ae01.alicdn.com/kf/S7aa25fb0590b47f387fa10d8c34874e0o/Men-Watch-Sports-Quartz-Watches-Men-Waterproof-Chronograph-Wristwatch-Mens-Military-Clock-Man-Relogio-Masculino.jpg_220x220xz.jpg_.webp",
-    price: 253.935,
+    after_price: 253.935,
     before_price: 761.853,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2383,7 +2383,7 @@ const allProducts = [
     id: 10,
     image:
       "https://ae01.alicdn.com/kf/S388da9fc1f044ad39fae434edd8421d83/New-2023-Usb-3-0-Pendrive-2TB-High-Speed-Pen-Drive-16TB-Metal-Cle-Usb-Flash.jpg_220x220xz.jpg_.webp",
-    price: 30.475,
+    after_price: 30.475,
     before_price: 50.77,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2413,7 +2413,7 @@ const allProducts = [
     id: 12,
     image:
       "https://ae01.alicdn.com/kf/S443b3605f110411ab81e1edb0cc2b79e2/2023-USB-Electric-Lighters-Windproof-USB-Rechargeable-Touch-Windproof-Cigarette-Accessories-Electric-Lighter-Portable-e-ziggarte.jpg_220x220xz.jpg_.webp",
-    price: 34.779,
+    after_price: 34.779,
     before_price: 74.023,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -2428,7 +2428,7 @@ const allProducts = [
     id: 13,
     image:
       "https://ae01.alicdn.com/kf/Sa8eaedc39d364a468a122eae8e66c516Q/Men-Military-Watch-Digital-50m-Waterproof-Wristwatch-LED-Quartz-Clock-Sport-Watch-Male-Big-Watches-Men.jpg_220x220xz.jpg_.webp",
-    price: 159.091,
+    after_price: 159.091,
     before_price: 545.658,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2463,7 +2463,7 @@ const allProducts = [
     id: 16,
     image:
       "https://ae01.alicdn.com/kf/S624f58ebe30548b18c4ed9e3b078ec5aI/2pcs-Set-Fashion-Mens-Sports-Watches-Man-Business-Quartz-Wristwatch-Luxury-Men-Casual-Clock-Watch-Relogio.jpg_220x220xz.jpg_.webp",
-    price: 53.814,
+    after_price: 53.814,
     before_price: 146.467,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2501,7 +2501,7 @@ const allProducts = [
     id: 19,
     image:
       "https://ae01.alicdn.com/kf/S1b267460fc174fac944b5ea6cf3b2b755/2022-New-Fashion-Female-Shoulder-Bag-Rhombus-Embroidered-Solid-Color-Chain-Women-Shoulder-Crossbody-Casual-Trendy.jpg_220x220xz.jpg_.webp",
-    price: 53.344,
+    after_price: 53.344,
     before_price: 140.527,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2516,7 +2516,7 @@ const allProducts = [
     id: 20,
     image:
       "https://ae01.alicdn.com/kf/S3a11b85341d448ffa339d504553b5b3eB/Men-s-Wallet-Leather-Billfold-Slim-Hipster-Cowhide-Credit-Card-ID-Holders-Inserts-Coin-Purses-Luxury.jpg_220x220xz.jpg_.webp",
-    price: 71.673,
+    after_price: 71.673,
     choice: [
       "./assets/image/product/top-selling.png",
       "./assets/image/product/190x64.webp",
@@ -2541,7 +2541,7 @@ const allProducts = [
     id: 22,
     image:
       "https://ae01.alicdn.com/kf/S63bc74e3da9d4dc5befcee58f1fee22c1/Quartz-Watch-Men-Business-Fashion-Fake-Three-Eye-Six-Pin-Calendar-Watch-For-Men-Mesh-Belt.jpg_220x220xz.jpg_.webp",
-    price: 93.763,
+    after_price: 93.763,
     before_price: 246.745,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2556,7 +2556,7 @@ const allProducts = [
     id: 23,
     image:
       "https://ae01.alicdn.com/kf/Sfb9d9c7461ef4d099357187e02749521B/Electric-Water-Storage-Gun-Pistol-Shooting-Toy-Portable-Children-Summer-Beach-Outdoor-Fight-Fantasy-Toys-for.jpg_220x220xz.jpg_.webp",
-    price: 161.206,
+    after_price: 161.206,
     before_price: 489.259,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2582,7 +2582,7 @@ const allProducts = [
     id: 25,
     image:
       "https://ae01.alicdn.com/kf/Se921fb855b8f454e8a64f4d86c4353ffL/SMAEL-New-Sport-Watch-Mens-50M-Waterproof-Clock-Alarm-Reloj-Hombre-1545D-Dual-Display-Wristwatch-Quartz.jpg_220x220xz.jpg_.webp",
-    price: 140.057,
+    after_price: 140.057,
     before_price: 425.341,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2597,7 +2597,7 @@ const allProducts = [
     id: 26,
     image:
       "https://ae01.alicdn.com/kf/H35a86aa144784f6fab7f372ca69ba109i/Fashion-Letters-Embroidery-Women-Men-Baseball-Caps-Female-Male-Sport-Visors-Snapback-Cap-Sun-Hat-For.jpg_220x220xz.jpg_.webp",
-    price: 88.123,
+    after_price: 88.123,
     before_price: 187.526,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -2623,7 +2623,7 @@ const allProducts = [
     id: 28,
     image:
       "https://ae01.alicdn.com/kf/S95124749f6e444519179ac91cb7d34dbJ/Creative-Frameless-DIY-Wall-Clock-Wall-Decal-Home-Silent-Clock-Living-Room-Office-Wall-Decoration.jpg_220x220xz.jpg_.webp",
-    price: 42.534,
+    after_price: 42.534,
     before_price: 134.417,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2671,7 +2671,7 @@ const allProducts = [
     id: 20,
     image:
       "https://ae01.alicdn.com/kf/S3a11b85341d448ffa339d504553b5b3eB/Men-s-Wallet-Leather-Billfold-Slim-Hipster-Cowhide-Credit-Card-ID-Holders-Inserts-Coin-Purses-Luxury.jpg_220x220xz.jpg_.webp",
-    price: 71.673,
+    after_price: 71.673,
     choice: [
       "./assets/image/product/top-selling.png",
       "./assets/image/product/190x64.webp",
@@ -2696,7 +2696,7 @@ const allProducts = [
     id: 22,
     image:
       "https://ae01.alicdn.com/kf/S63bc74e3da9d4dc5befcee58f1fee22c1/Quartz-Watch-Men-Business-Fashion-Fake-Three-Eye-Six-Pin-Calendar-Watch-For-Men-Mesh-Belt.jpg_220x220xz.jpg_.webp",
-    price: 93.763,
+    after_price: 93.763,
     before_price: 246.745,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2711,7 +2711,7 @@ const allProducts = [
     id: 23,
     image:
       "https://ae01.alicdn.com/kf/Sfb9d9c7461ef4d099357187e02749521B/Electric-Water-Storage-Gun-Pistol-Shooting-Toy-Portable-Children-Summer-Beach-Outdoor-Fight-Fantasy-Toys-for.jpg_220x220xz.jpg_.webp",
-    price: 161.206,
+    after_price: 161.206,
     before_price: 489.259,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2759,7 +2759,7 @@ const allProducts = [
     id: 3,
     image:
       "./assets/image/product/Luxury-Fashion-Mens-Watches-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 46.764,
+    after_price: 46.764,
     before_price: 146.637,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2784,7 +2784,7 @@ const allProducts = [
     id: 16,
     image:
       "https://ae01.alicdn.com/kf/S624f58ebe30548b18c4ed9e3b078ec5aI/2pcs-Set-Fashion-Mens-Sports-Watches-Man-Business-Quartz-Wristwatch-Luxury-Men-Casual-Clock-Watch-Relogio.jpg_220x220xz.jpg_.webp",
-    price: 53.814,
+    after_price: 53.814,
     before_price: 146.467,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2822,7 +2822,7 @@ const allProducts = [
     id: 26,
     image:
       "https://ae01.alicdn.com/kf/H35a86aa144784f6fab7f372ca69ba109i/Fashion-Letters-Embroidery-Women-Men-Baseball-Caps-Female-Male-Sport-Visors-Snapback-Cap-Sun-Hat-For.jpg_220x220xz.jpg_.webp",
-    price: 88.123,
+    after_price: 88.123,
     before_price: 187.526,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -2848,7 +2848,7 @@ const allProducts = [
     id: 28,
     image:
       "https://ae01.alicdn.com/kf/S95124749f6e444519179ac91cb7d34dbJ/Creative-Frameless-DIY-Wall-Clock-Wall-Decal-Home-Silent-Clock-Living-Room-Office-Wall-Decoration.jpg_220x220xz.jpg_.webp",
-    price: 42.534,
+    after_price: 42.534,
     before_price: 134.417,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2906,7 +2906,7 @@ const allProducts = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2921,7 +2921,7 @@ const allProducts = [
     id: 8,
     image:
       "https://ae01.alicdn.com/kf/S7aa25fb0590b47f387fa10d8c34874e0o/Men-Watch-Sports-Quartz-Watches-Men-Waterproof-Chronograph-Wristwatch-Mens-Military-Clock-Man-Relogio-Masculino.jpg_220x220xz.jpg_.webp",
-    price: 253.935,
+    after_price: 253.935,
     before_price: 761.853,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2957,7 +2957,7 @@ const allProducts = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -2994,7 +2994,7 @@ const allProducts = [
     id: 3,
     image:
       "./assets/image/product/Luxury-Fashion-Mens-Watches-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 46.764,
+    after_price: 46.764,
     before_price: 146.637,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -3043,7 +3043,7 @@ const allProducts = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -3092,7 +3092,7 @@ const allProducts = [
     id: 7,
     image:
       "https://ae01.alicdn.com/kf/S5dd07f6fcfcd409d98b24bcf2ea2a5bdT/Fashion-Mens-Watches-Luxury-Stainless-Steel-Quartz-Wristwatch-Calendar-Luminous-Clock-Men-Business-Casual-Watch-Reloj.jpg_220x220xz.jpg_.webp",
-    price: 80.603,
+    after_price: 80.603,
     before_price: 247.215,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -3107,7 +3107,7 @@ const allProducts = [
     id: 8,
     image:
       "https://ae01.alicdn.com/kf/S7aa25fb0590b47f387fa10d8c34874e0o/Men-Watch-Sports-Quartz-Watches-Men-Waterproof-Chronograph-Wristwatch-Mens-Military-Clock-Man-Relogio-Masculino.jpg_220x220xz.jpg_.webp",
-    price: 253.935,
+    after_price: 253.935,
     before_price: 761.853,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -3132,7 +3132,7 @@ const allProducts = [
     id: 10,
     image:
       "https://ae01.alicdn.com/kf/S388da9fc1f044ad39fae434edd8421d83/New-2023-Usb-3-0-Pendrive-2TB-High-Speed-Pen-Drive-16TB-Metal-Cle-Usb-Flash.jpg_220x220xz.jpg_.webp",
-    price: 30.475,
+    after_price: 30.475,
     before_price: 50.77,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -3162,7 +3162,7 @@ const allProducts = [
     id: 12,
     image:
       "https://ae01.alicdn.com/kf/S443b3605f110411ab81e1edb0cc2b79e2/2023-USB-Electric-Lighters-Windproof-USB-Rechargeable-Touch-Windproof-Cigarette-Accessories-Electric-Lighter-Portable-e-ziggarte.jpg_220x220xz.jpg_.webp",
-    price: 34.779,
+    after_price: 34.779,
     before_price: 74.023,
     choice: [
       "./assets/image/product/summer-sale.png",
@@ -3177,7 +3177,7 @@ const allProducts = [
     id: 13,
     image:
       "https://ae01.alicdn.com/kf/Sa8eaedc39d364a468a122eae8e66c516Q/Men-Military-Watch-Digital-50m-Waterproof-Wristwatch-LED-Quartz-Clock-Sport-Watch-Male-Big-Watches-Men.jpg_220x220xz.jpg_.webp",
-    price: 159.091,
+    after_price: 159.091,
     before_price: 545.658,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -3212,7 +3212,7 @@ const allProducts = [
     id: 16,
     image:
       "https://ae01.alicdn.com/kf/S624f58ebe30548b18c4ed9e3b078ec5aI/2pcs-Set-Fashion-Mens-Sports-Watches-Man-Business-Quartz-Wristwatch-Luxury-Men-Casual-Clock-Watch-Relogio.jpg_220x220xz.jpg_.webp",
-    price: 53.814,
+    after_price: 53.814,
     before_price: 146.467,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -3274,7 +3274,7 @@ const allProducts = [
     id: 28,
     image:
       "https://ae01.alicdn.com/kf/S95124749f6e444519179ac91cb7d34dbJ/Creative-Frameless-DIY-Wall-Clock-Wall-Decal-Home-Silent-Clock-Living-Room-Office-Wall-Decoration.jpg_220x220xz.jpg_.webp",
-    price: 42.534,
+    after_price: 42.534,
     before_price: 134.417,
     choice: [
       "./assets/image/product/190x64.webp",
@@ -3322,7 +3322,7 @@ const allProducts = [
     id: 20,
     image:
       "https://ae01.alicdn.com/kf/S3a11b85341d448ffa339d504553b5b3eB/Men-s-Wallet-Leather-Billfold-Slim-Hipster-Cowhide-Credit-Card-ID-Holders-Inserts-Coin-Purses-Luxury.jpg_220x220xz.jpg_.webp",
-    price: 71.673,
+    after_price: 71.673,
     choice: [
       "./assets/image/product/top-selling.png",
       "./assets/image/product/190x64.webp",

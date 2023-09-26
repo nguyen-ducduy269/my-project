@@ -52,11 +52,11 @@ const NavBar = () => {
 
           <button className="btn flex btnOne">Contact</button>
 
-          {/* <button className="btn flex btnOne">Contact</button> */}
+          <button className="btn flex btnTwo">Contact</button>
+        </div>
 
-          <div className="toggleicon">
-            <CgMenuGridO />
-          </div>
+        <div className="toggleicon">
+          <CgMenuGridO />
         </div>
       </div>
     </div>

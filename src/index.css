@@ -194,4 +194,11 @@ h2 {
       font-weight: 700;
     }
   }
+
+  .navBarMenu .btnOne{
+    display: block;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+  }
 }

@@ -7,18 +7,12 @@ import Infor from "./components/Infor/Infor";
 import Lounge from "./components/Lounge/Lounge";
 import Travelers from "./components/Travelers/Travelers";
 import Subcribers from "./components/Subcribers/Subcribers";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
       <NavBar />
-      <Home />
-      <Search />
-      <Support />
-      <Infor />
-      <Lounge />
-      <Travelers />
-      <Subcribers />
     </>
   );
 }

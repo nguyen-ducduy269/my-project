@@ -52,10 +52,6 @@ li {
   cursor: pointer;
 }
 
-.none {
-  display: block;
-}
-
 .flex {
   display: flex;
   align-items: center;
@@ -64,6 +60,10 @@ li {
 .grid {
   display: grid;
   align-items: center;
+}
+
+.none {
+  display: none;
 }
 
 .btn {
@@ -110,4 +110,88 @@ h2 {
   font-size: 25px;
   padding: 1rem 0;
   color: var(--blackColor);
+}
+
+/* navBar style */
+.navBar {
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navBarOne,
+.navBarTwo {
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+.navBarOne {
+  background-color: var(--SecondaryColor);
+}
+
+.navBarOne .icon:hover {
+  color: var(--PrimaryColor);
+}
+
+.atb {
+  gap: 1rem;
+}
+
+.atb span {
+  color: var(--blackColor);
+  font-size: 13px;
+  cursor: pointer;
+  &:hover {
+    color: var(--PrimaryColor);
+    font-size: 700;
+  }
+}
+
+.navBarTwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 3rem;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+}
+
+.navBarTwo .logoDiv .logo {
+  width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .navBarMenu {
+    position: absolute;
+    background: var(--SecondaryColor);
+    padding: 1.5rem;
+    border-radius: 10px;
+    top: 5rem;
+    right: 50%;
+    width: 80%;
+    transform: translateX(50%);
+    z-index: 2000;
+    box-shadow: var(--boxShadow);
+    border: 3px solid var(--whiteColor);
+    transition: 0.4s ease-in-out;
+  }
+
+  .navBarMenu .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .navBarMenu .listItem {
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: var(--blackColor);
+    &:hover {
+      color: var(--PrimaryColor);
+      font-weight: 700;
+    }
+  }
 }

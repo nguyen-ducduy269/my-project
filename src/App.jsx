@@ -13,6 +13,10 @@ function App() {
   return (
     <>
       <NavBar />
+      <Home />
+      <Search />
+      <Support />
+      <Infor />
     </>
   );
 }

@@ -163,6 +163,234 @@ h2 {
   width: 20%;
 }
 
+.navbar_With_Bg {
+  background: var(--SecondaryColor);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--boxShadow);
+}
+
+/* home style */
+.home {
+  padding-top: 10rem;
+  text-align: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.home .mainText {
+  color: var(--blackColor);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 2.5rem;
+}
+
+.home .homeImages {
+  width: 100%;
+  margin: 1rem auto 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5rem;
+}
+
+.videoDiv {
+  width: 100%;
+}
+
+.videoDiv .video {
+  border-radius: 10rem;
+}
+
+.plane {
+  position: absolute;
+  width: 100%;
+  top: -10%;
+}
+
+/* search */
+.search .sectionContainer {
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid var(--greyBg);
+  border-radius: 16px;
+  row-gap: 2rem;
+}
+
+.sectionContainer .btns {
+  background: var(--SecondaryColor);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+.btns .singleBtn {
+  padding: 0.8rem 1.5rem;
+  font-size: 13px;
+  border-radius: 3rem;
+  width: 80%;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--PrimaryColor);
+    color: var(--whiteColor);
+    font-weight: 500;
+    transition: 0.4s ease;
+  }
+}
+
+.btns .active {
+  background-color: var(--PrimaryColor);
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+
+.sectionContainer .seachInputs {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.seachInputs .singleInput .iconDiv {
+  padding: 16px 10px;
+  border-radius: 3rem;
+  background: var(--SecondaryColor);
+  margin-right: 1rem;
+}
+
+.iconDiv .icon {
+  color: var(--blackColor);
+  opacity: 0.7;
+}
+
+.singleInput .texts h4 {
+  padding-top: 0;
+  padding-bottom: 0.7rem;
+  color: var(--blackColor);
+  font-weight: 700;
+}
+
+.singleInput .texts input {
+  width: 95%;
+  border: none;
+  outline: none;
+  background: transparent;
+  &::placeholder {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+}
+
+/* support */
+.support .sectionContainer .tittleDiv{
+  text-align: center;
+}
+
+.tittleDiv small{
+  letter-spacing: .8rem;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--blackColor);
+  line-height: 1.5rem;
+}
+
+.support .sectionContainer .infoDiv{
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.infoDiv .textDiv{
+  gap: 1.5rem;
+}
+
+.textDiv .singleInfo .number{
+  background: var(--PrimaryColor);
+  padding: 5px 12px;
+  width: 40px;
+  border-radius: 3rem;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--whiteColor);
+}
+
+.textDiv .singleInfo .colorOne{
+  background: var(--colorOne);
+}
+
+.textDiv .singleInfo .colorTwo{
+  background: var(--colorTwo);
+}
+
+.imgDiv{
+  margin: auto;
+}
+
+.imgDiv img{
+  width: 100%;
+  max-width: 420px;
+  border-radius: 15px;
+}
+
+/* infor */
+.infor {
+  background: var(--SecondaryColor);
+}
+
+.inforContainer .titleDiv{
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.inforContainer .cardsDiv{
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.cardsDiv .singleCard{
+  background: var(--whiteColor);
+  padding: 3rem 2rem;
+  border-radius: 10rem;
+  gap: 1rem;
+  text-align: center;
+  margin: auto;
+  height: 320px;
+  width: 90%;
+  max-width: 250px;
+}
+
+.singleCard .iconDiv{
+  justify-content: center;
+  margin: auto;
+  background: var(--PrimaryColor);
+  width: max-content;
+  height: 55px;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+
+.singleCard .iconDiv .icon{
+  color: var(--whiteColor);
+}
+
+.singleCard .cardTitle{
+  color: var(--blackColor);
+  font-weight: 700;
+}
+
+.singleCard .colorOne{
+  background: var(--colorOne);
+}
+
+.singleCard .colorTwo{
+  background: var(--colorTwo);
+}
+
+
 @media screen and (max-width: 768px) {
   .navBarMenu {
     position: absolute;
@@ -170,7 +398,7 @@ h2 {
     padding: 1.5rem;
     border-radius: 10px;
     top: 5rem;
-    right: 50%;
+    right: -50%;
     width: 80%;
     transform: translateX(50%);
     z-index: 2000;
@@ -195,10 +423,24 @@ h2 {
     }
   }
 
-  .navBarMenu .btnOne{
+  .navBarMenu .btnOne {
     display: block;
     justify-content: center;
     margin: auto;
     margin-top: 1rem;
+  }
+
+  .btnTwo {
+    display: none;
+  }
+
+  .toggleIcon .icon {
+    font-size: 30px;
+    color: var(--blackColor);
+  }
+
+  .showNavBar {
+    right: 50%;
+    transition: 0.5s ease-in-out;
   }
 }

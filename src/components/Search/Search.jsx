@@ -67,18 +67,6 @@ const Search = () => {
             </div>
 
             <div className="texts">
-              <h4>Check in</h4>
-              <input type="text" placeholder="Add date" />
-            </div>
-          </div>
-
-          {/* single input */}
-          <div className="singleInput flex">
-            <div className="iconDiv">
-              <RxCalendar className="icon" />
-            </div>
-
-            <div className="texts">
               <h4>Check Out</h4>
               <input type="text" placeholder="Add date" />
             </div>

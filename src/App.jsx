@@ -17,6 +17,10 @@ function App() {
       <Search />
       <Support />
       <Infor />
+      <Lounge />
+      <Travelers />
+      <Subcribers />
+      <Footer />
     </>
   );
 }

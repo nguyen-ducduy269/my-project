@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Lounge = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="lounge container section">
       <div className="sectionContainer grid">
-        <div className="imgDiv">
+        <div data-aos="fade-left" data-aos-duration="2500" className="imgDiv">
           <div className="image1">
             <img
               src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGluc2lkZSUyMGFpcnBsYW5lfGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60"
@@ -21,10 +27,16 @@ const Lounge = () => {
         </div>
 
         <div className="textDiv">
-          <h2>Unaccompanied Minor Lounge</h2>
+          <h2 data-aos="fade-down" data-aos-duration="2500">
+            Unaccompanied Minor Lounge
+          </h2>
 
           <div className="grids grid">
-            <div className="singleGrid">
+            <div
+              className="singleGrid"
+              data-aos="fade-down"
+              data-aos-duration="2500"
+            >
               <span className="gridTitle">Help through the airpot</span>
 
               <p>
@@ -33,7 +45,11 @@ const Lounge = () => {
               </p>
             </div>
 
-            <div className="singleGrid">
+            <div
+              className="singleGrid"
+              data-aos="fade-down"
+              data-aos-duration="2500"
+            >
               <span className="gridTitle">Priority Boarding</span>
 
               <p>
@@ -42,7 +58,11 @@ const Lounge = () => {
               </p>
             </div>
 
-            <div className="singleGrid">
+            <div
+              className="singleGrid"
+              data-aos="fade-down"
+              data-aos-duration="2500"
+            >
               <span className="gridTitle">Care on the flight</span>
 
               <p>
@@ -51,7 +71,11 @@ const Lounge = () => {
               </p>
             </div>
 
-            <div className="singleGrid">
+            <div
+              className="singleGrid"
+              data-aos="fade-down"
+              data-aos-duration="2500"
+            >
               <span className="gridTitle">Chauffeur drive service</span>
 
               <p>

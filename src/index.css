@@ -251,6 +251,11 @@ h2 {
   justify-content: center;
   flex-direction: column;
   gap: 1.5rem;
+  cursor: pointer;
+}
+
+.seachInputs .btnBlock {
+  justify-content: center;
 }
 
 .seachInputs .singleInput .iconDiv {
@@ -389,6 +394,7 @@ h2 {
 /* lounge  */
 .lounge .sectionContainer {
   gap: 1.5rem;
+  padding-top: 20px;
 }
 
 .lounge .sectionContainer .imgDiv {
@@ -1076,6 +1082,10 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     margin: 3rem 0;
   }
+
+  .lounge .sectionContainer .imgDiv {
+    height: 400px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1143,6 +1153,10 @@ h2 {
   .search .sectionContainer .btns {
     width: 50%;
   }
+
+  .lounge .sectionContainer .imgDiv {
+    height: 420px;
+  }
 }
 
 @media screen and (min-width: 1106px) {
@@ -1157,6 +1171,10 @@ h2 {
   .search .sectionContainer {
     position: relative;
     z-index: 10;
+  }
+
+  .lounge .sectionContainer .imgDiv {
+    height: 440px;
   }
 }
 
@@ -1196,6 +1214,10 @@ h2 {
   .subcribe .sectionContainer {
     max-width: 50%;
   }
+
+  .lounge .sectionContainer .imgDiv {
+    height: 460px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1204,4 +1226,23 @@ h2 {
     width: 90%;
     top: -20%;
   }
+
+  .lounge .sectionContainer .imgDiv {
+    height: 480px;
+  }
+}
+
+::selection{
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+
+::-webkit-scollbar {
+  width: 10px;
+  background: var(--greyBg);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--PrimaryColor);
+  border-radius: 10px;
 }

@@ -10,15 +10,19 @@ const Lounge = () => {
   return (
     <div className="lounge container section">
       <div className="sectionContainer grid">
-        <div data-aos="fade-left" data-aos-duration="2500" className="imgDiv">
-          <div className="image1">
+        <div className="imgDiv">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="2500"
+            className="image1"
+          >
             <img
               src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGluc2lkZSUyMGFpcnBsYW5lfGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60"
               alt=""
             />
           </div>
 
-          <div className="image2">
+          <div data-aos="fade-left" data-aos-duration="2500" className="image2">
             <img
               src="https://images.unsplash.com/photo-1608023136037-626dad6c6188?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5zaWRlJTIwYWlycGxhbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60"
               alt=""

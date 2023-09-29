@@ -711,7 +711,7 @@ h2 {
     padding-top: 12rem;
   }
 
-  .navBar .navBarTwo .logoDiv .logo{
+  .navBar .navBarTwo .logoDiv .logo {
     width: 7%;
   }
 
@@ -1111,7 +1111,7 @@ h2 {
     padding: 0 5rem;
   }
 
-  .navBar .navBarTwo .logoDiv .logo{
+  .navBar .navBarTwo .logoDiv .logo {
     width: 7%;
   }
 
@@ -1134,61 +1134,61 @@ h2 {
     border-radius: 15rem;
   }
 
-  .home .homeImages .plane{
+  .home .homeImages .plane {
     width: 85%;
     top: -10%;
   }
 
   /* search */
-  .search .sectionContainer .btns{
+  .search .sectionContainer .btns {
     width: 50%;
   }
 }
 
-@media screen and (min-width: 1106px){
+@media screen and (min-width: 1106px) {
   .subcribe .sectionContainer {
     max-width: 60%;
   }
 
-  .home .homeImages .plane{
+  .home .homeImages .plane {
     z-index: 1;
   }
 
-  .search .sectionContainer{
+  .search .sectionContainer {
     position: relative;
     z-index: 10;
   }
 }
 
-@media screen and (min-width: 1332px){
-  .navBar .navBarOne .menu{
+@media screen and (min-width: 1332px) {
+  .navBar .navBarOne .menu {
     gap: 1rem;
   }
 
-  .navBarOne .menu .listItem{
+  .navBarOne .menu .listItem {
     padding: 0 1rem;
-    font-size:14px;
+    font-size: 14px;
   }
 
-  .navBar .navBarTwo .logoDiv .logo{
+  .navBar .navBarTwo .logoDiv .logo {
     width: 5%;
   }
 
-  .home .homeImages .plane{
+  .home .homeImages .plane {
     z-index: 1;
   }
 
-  .search .sectionContainer{
+  .search .sectionContainer {
     position: relative;
     z-index: 10;
   }
 
   /* support */
-  .support .sectionContainer .infoDiv{
+  .support .sectionContainer .infoDiv {
     gap: 1rem;
   }
 
-  .infoDiv .textDiv .singleInfo p{
+  .infoDiv .textDiv .singleInfo p {
     max-width: 500px;
   }
 
@@ -1198,10 +1198,10 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1440px){
-    /* home */  
-    .home .homeImages .plane{
-      width: 90%;
-      top: -20%;
-    }
+@media screen and (min-width: 1440px) {
+  /* home */
+  .home .homeImages .plane {
+    width: 90%;
+    top: -20%;
+  }
 }

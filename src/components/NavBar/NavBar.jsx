@@ -60,7 +60,7 @@ const NavBar = () => {
 
         <div className={active}>
           <ul className="menu flex">
-            <li onClick={removeNavBar} className="listItem">
+            <li onClick={removeNavBar} className="listItem navbar-active">
               Home
             </li>
             <li onClick={removeNavBar} className="listItem">

@@ -13,7 +13,7 @@ const Lounge = () => {
         <div className="imgDiv">
           <div
             data-aos="fade-right"
-            data-aos-duration="2500"
+            data-aos-duration="1500"
             className="image1"
           >
             <img
@@ -22,7 +22,7 @@ const Lounge = () => {
             />
           </div>
 
-          <div data-aos="fade-left" data-aos-duration="2500" className="image2">
+          <div data-aos="fade-left" data-aos-duration="1500" className="image2">
             <img
               src="https://images.unsplash.com/photo-1608023136037-626dad6c6188?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW5zaWRlJTIwYWlycGxhbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60"
               alt=""
@@ -31,7 +31,7 @@ const Lounge = () => {
         </div>
 
         <div className="textDiv">
-          <h2 data-aos="fade-down" data-aos-duration="2500">
+          <h2 data-aos="fade-down" data-aos-duration="1500">
             Unaccompanied Minor Lounge
           </h2>
 
@@ -39,7 +39,7 @@ const Lounge = () => {
             <div
               className="singleGrid"
               data-aos="fade-down"
-              data-aos-duration="2500"
+              data-aos-duration="1500"
             >
               <span className="gridTitle">Help through the airpot</span>
 
@@ -52,7 +52,7 @@ const Lounge = () => {
             <div
               className="singleGrid"
               data-aos="fade-down"
-              data-aos-duration="2500"
+              data-aos-duration="1500"
             >
               <span className="gridTitle">Priority Boarding</span>
 
@@ -65,7 +65,7 @@ const Lounge = () => {
             <div
               className="singleGrid"
               data-aos="fade-down"
-              data-aos-duration="2500"
+              data-aos-duration="1500"
             >
               <span className="gridTitle">Care on the flight</span>
 

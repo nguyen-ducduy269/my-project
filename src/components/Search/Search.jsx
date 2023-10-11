@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import axios from "axios";
 
 //////import icons
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -265,6 +266,10 @@ const Search = () => {
     // }
   };
 
+  const handleChange = (e) => {
+    setLocation(e.target.value);
+  };
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -273,7 +278,7 @@ const Search = () => {
     <div className="search container section">
       <div
         data-aos="fade-up"
-        data-aos-duration="2500"
+        data-aos-duration="1500"
         className="sectionContainer grid"
       >
         <div className="btns flex">
@@ -314,7 +319,7 @@ const Search = () => {
 
         <div
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           className="seachInputs flex"
         >
           {/* single input */}
@@ -325,11 +330,10 @@ const Search = () => {
 
             <div className="texts">
               <h4>Location</h4>
-              <select id="countries">
+              <select id="countries" value={location} onChange={handleChange}>
                 {countries.map((item, index) => {
-                  location == item;
                   return (
-                    <option value={location} key={index}>
+                    <option value={item} key={index}>
                       {item}
                     </option>
                   );
@@ -392,7 +396,8 @@ const Search = () => {
             <div className="texts">
               <h4>Check In</h4>
               <input
-                type="text"
+                type="date"
+                className="select-date"
                 value={checkIn}
                 onChange={(e) => {
                   setCheckIn(e.currentTarget.value);
@@ -424,7 +429,8 @@ const Search = () => {
             <div className="texts">
               <h4>Check Out</h4>
               <input
-                type="text"
+                type="date"
+                className="select-date"
                 value={checkOut}
                 onChange={(e) => {
                   setCheckOut(e.currentTarget.value);

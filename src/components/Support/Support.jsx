@@ -9,7 +9,7 @@ const information = [
     title: "Travel requirements for Dubai",
     discription:
       "Find help with booking and travel plans, see what to expect along the journey to your favourite destinations!",
-    duration: "2500",
+    duration: "1500",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const information = [
     discription:
       "Find help with booking and travel plans, see what to expect along the journey to your favourite destinations!",
     color: "var(--colorOne)",
-    duration: "3500",
+    duration: "2500",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const information = [
       "Find help with booking and travel plans, see what to expect along the journey to your favourite destinations!",
 
     color: "var(--colorTwo)",
-    duration: "4500",
+    duration: "3500",
   },
 ];
 
@@ -74,7 +74,7 @@ const Support = () => {
             })}
           </div>
 
-          <div data-aos="fade-left" data-aos-duration="2500" className="imgDiv">
+          <div data-aos="fade-left" data-aos-duration="1500" className="imgDiv">
             <img
               src="https://mixkit.imgix.net/videos/preview/mixkit-outside-a-plane-window-4203-0.jpg?q=80&auto=format%2Ccompress"
               alt=""

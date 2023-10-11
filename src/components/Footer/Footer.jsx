@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="sectionContainer container grid">
-        <div data-aos="fade-up" data-aos-duration="2500" className="gridOne">
+        <div data-aos="fade-up" data-aos-duration="1500" className="gridOne">
           <div className="logoDiv">
             <img src={pageIcon} className="logo" alt="" />
           </div>
@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div
           data-aos="fade-up"
-          data-aos-duration="2500"
+          data-aos-duration="1500"
           className="footerLinks"
         >
           <span className="linkTitle">Information</span>
@@ -61,7 +61,7 @@ const Footer = () => {
 
         <div
           data-aos="fade-up"
-          data-aos-duration="2500"
+          data-aos-duration="1500"
           className="footerLinks"
         >
           <span className="linkTitle">Quick Guide</span>
@@ -87,7 +87,7 @@ const Footer = () => {
 
         <div
           data-aos="fade-up"
-          data-aos-duration="2500"
+          data-aos-duration="1500"
           className="footerLinks"
         >
           <span className="linkTitle">Information</span>

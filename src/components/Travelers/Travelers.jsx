@@ -49,7 +49,7 @@ const Travelers = () => {
   return (
     <div className="travelers container section">
       <div className="sectionContainer">
-        <h2 data-aos="fade-down" data-aos-duration="2500">
+        <h2 data-aos="fade-down" data-aos-duration="1500">
           Top travelers of this month!
         </h2>
 
@@ -58,7 +58,7 @@ const Travelers = () => {
             return (
               <div
                 data-aos="fade-up"
-                data-aos-duration="2500"
+                data-aos-duration="1500"
                 className="singleTraveler"
                 key={item.id}
               >

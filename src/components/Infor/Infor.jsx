@@ -15,10 +15,10 @@ const Infor = () => {
     <div className="infor section">
       <div className="inforContainer container">
         <div className="titleDiv flex">
-          <h2 data-aos="fade-right" data-aos-duration="2500">
+          <h2 data-aos="fade-right" data-aos-duration="1500">
             Travel to make memories all around the world
           </h2>
-          <button className="btn" data-aos="fade-left" data-aos-duration="2500">
+          <button className="btn" data-aos="fade-left" data-aos-duration="1500">
             View All
           </button>
         </div>
@@ -26,7 +26,7 @@ const Infor = () => {
         <div className="cardsDiv grid">
           <div
             data-aos="fade-up"
-            data-aos-duration="2500"
+            data-aos-duration="1500"
             className="singleCard grid"
           >
             <div className="iconDiv flex">
@@ -42,7 +42,7 @@ const Infor = () => {
 
           <div
             data-aos="fade-up"
-            data-aos-duration="3500"
+            data-aos-duration="2500"
             className="singleCard grid"
           >
             <div className="iconDiv flex colorOne">
@@ -58,7 +58,7 @@ const Infor = () => {
 
           <div
             data-aos="fade-up"
-            data-aos-duration="4500"
+            data-aos-duration="3500"
             className="singleCard grid"
           >
             <div className="iconDiv flex colorTwo">

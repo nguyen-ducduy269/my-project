@@ -169,6 +169,10 @@ h2 {
   box-shadow: var(--boxShadow);
 }
 
+.navbar-active{
+  border-bottom: 2px solid var(--PrimaryColor);
+}
+
 /* home style */
 .home {
   padding-top: 10rem;
@@ -211,7 +215,6 @@ h2 {
 .search .sectionContainer {
   width: 100%;
   padding: 1.5rem;
-  border: 2px solid var(--greyBg);
   border-radius: 16px;
   row-gap: 2rem;
 }
